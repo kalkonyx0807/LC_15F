@@ -1,0 +1,1265 @@
+{
+  "이상": [
+    {
+      "name": "검계 살수",
+      "faction": "검계",
+      "s1": { "sin": "오만", "type": "참격", "keywords": ["호흡"] },
+      "s2": { "sin": "분노", "type": "참격", "keywords": ["호흡"] },
+      "s3": { "sin": "질투", "type": "참격", "keywords": ["호흡"] }
+    },
+    {
+      "name": "개화 E.G.O::동백",
+      "faction": "기술해방연합",
+      "s1": { "sin": "탐식", "type": "관통", "keywords": ["침잠"] },
+      "s2": { "sin": "나태", "type": "타격", "keywords": ["침잠"] },
+      "s3": { "sin": "오만", "type": "관통", "keywords": ["침잠"] }
+    },
+    {
+      "name": "W사 3등급 정리 요원",
+      "faction": "W사",
+      "s1": { "sin": "나태", "type": "참격", "keywords": ["충전", "파열"] },
+      "s2": { "sin": "탐식", "type": "관통", "keywords": ["충전", "파열"] },
+      "s3": { "sin": "우울", "type": "관통", "keywords": ["충전", "파열"] }
+    },
+    {
+      "name": "약지 점묘파",
+      "faction": ["약지", "점묘파"],
+      "s1": { "sin": "우울", "type": "관통", "keywords": ["출혈"] },
+      "s2": { "sin": "질투", "type": "관통", "keywords": ["출혈"] },
+      "s3": { "sin": "나태", "type": "관통", "keywords": ["출혈"] }
+    },
+    {
+      "name": "로보토미 E.G.O::엄숙한 애도",
+      "faction": ["로보토미 본사", "E.G.O 장비"],
+      "s1": { "sin": "오만", "type": "관통", "keywords": ["침잠", "탄환"] },
+      "s2": { "sin": "우울", "type": "관통", "keywords": ["침잠", "탄환"] },
+      "s3": { "sin": "나태", "type": "관통", "keywords": ["침잠", "탄환"] }
+    },
+    {
+      "name": "남부 리우 협회 3과",
+      "faction": "리우 협회",
+      "s1": { "sin": "색욕", "type": "참격", "keywords": ["화상"] },
+      "s2": { "sin": "분노", "type": "참격", "keywords": ["화상"] },
+      "s3": { "sin": "질투", "type": "참격", "keywords": ["화상"] }
+    },
+    {
+      "name": "N사 E.G.O::흉탄",
+      "faction": ["N사", "E.G.O 장비"],
+      "s1": { "sin": "분노", "type": "타격", "keywords": ["호흡", "출혈"] },
+      "s2": { "sin": "색욕", "type": "관통", "keywords": ["호흡", "출혈"] },
+      "s3": { "sin": "오만", "type": "관통", "keywords": ["호흡", "출혈"] }
+    },
+    {
+      "name": "흑수 - 오 필두",
+      "faction": ["흑수", "흑수-오"],
+      "s1": { "sin": "나태", "type": "참격", "keywords": ["파열", "진동"] },
+      "s2": { "sin": "질투", "type": "참격", "keywords": ["파열", "진동"] },
+      "s3": { "sin": "탐식", "type": "참격", "keywords": ["파열", "진동"] }
+    },
+    {
+      "name": "거미집 검지 아비",
+      "faction": ["검지", "거미집"],
+      "s1": { "sin": "탐식", "type": "타격", "keywords": ["호흡", "침잠"] },
+      "s2": { "sin": "오만", "type": "관통", "keywords": ["호흡", "침잠"] },
+      "s3": { "sin": "우울", "type": "참격", "keywords": ["호흡", "침잠"] }
+    },
+    {
+      "name": "남부 세븐 협회 6과",
+      "faction": "세븐 협회",
+      "s1": { "sin": "우울", "type": "관통", "keywords": ["파열"] },
+      "s2": { "sin": "탐식", "type": "관통", "keywords": ["파열"] },
+      "s3": { "sin": "나태", "type": "타격", "keywords": ["파열"] }
+    },
+    {
+      "name": "어금니 사무소 해결사",
+      "faction": "어금니 사무소",
+      "s1": { "sin": "색욕", "type": "관통", "keywords": ["진동", "버림"] },
+      "s2": { "sin": "나태", "type": "타격", "keywords": ["진동", "버림"] },
+      "s3": { "sin": "분노", "type": "타격", "keywords": ["진동", "버림"] }
+    },
+    {
+      "name": "피쿼드호 일등 향해사",
+      "faction": "피쿼드호",
+      "s1": { "sin": "오만", "type": "관통", "keywords": ["호흡", "출혈"] },
+      "s2": { "sin": "질투", "type": "관통", "keywords": ["호흡", "출혈"] },
+      "s3": { "sin": "탐식", "type": "관통", "keywords": ["호흡", "출혈"] }
+    },
+    {
+      "name": "남부 디에치 협회 4과",
+      "faction": "디에치 협회",
+      "s1": { "sin": "탐식", "type": "관통", "keywords": ["침잠", "버림"] },
+      "s2": { "sin": "색욕", "type": "타격", "keywords": ["침잠", "버림"] },
+      "s3": { "sin": "나태", "type": "타격", "keywords": ["침잠", "버림"] }
+    },
+    {
+      "name": "LCE E.G.O::초롱",
+      "faction": ["LCE", "림버스 컴퍼니", "E.G.O 장비"],
+      "s1": { "sin": "나태", "type": "타격", "keywords": ["파열"] },
+      "s2": { "sin": "질투", "type": "관통", "keywords": ["파열"] },
+      "s3": { "sin": "탐식", "type": "타격", "keywords": ["파열"] }
+    },
+    {
+      "name": "LCB 수감자",
+      "faction": ["LCB", "림버스 컴퍼니"],
+      "s1": { "sin": "우울", "type": "참격", "keywords": ["침잠"] },
+      "s2": { "sin": "질투", "type": "관통", "keywords": ["침잠"] },
+      "s3": { "sin": "나태", "type": "참격", "keywords": ["침잠"] }
+    }
+  ],
+  "파우스트": [
+    {
+      "name": "쥐는 자",
+      "faction": "N사 광신도",
+      "s1": {"sin": "질투", "type": "관통", "keywords": ["출혈"]},
+      "s2": {"sin": "색욕", "type": "관통", "keywords": ["출혈"]},
+      "s3": {"sin": "오만", "type": "타격", "keywords": ["출혈"]}
+    },
+    {
+      "name": "남부 세븐 협회 4과",
+      "faction": "세븐 협회",
+      "s1": {"sin": "질투", "type": "참격", "keywords": ["파열"]},
+      "s2": {"sin": "우울", "type": "참격", "keywords": ["파열"]},
+      "s3": {"sin": "탐식", "type": "참격", "keywords": ["파열"]}
+    },
+    {
+      "name": "로보토미 E.G.O::후회",
+      "faction": ["로보토미 본사", "E.G.O 장비"],
+      "s1": {"sin": "나태", "type": "타격", "keywords": ["진동"]},
+      "s2": {"sin": "오만", "type": "타격", "keywords": ["진동"]},
+      "s3": {"sin": "분노", "type": "타격", "keywords": ["진동"]}
+    },
+    {
+      "name": "검계 살수",
+      "faction": "검계",
+      "s1": {"sin": "나태", "type": "참격", "keywords": ["호흡", "출혈"]},
+      "s2": {"sin": "오만", "type": "관통", "keywords": ["호흡", "출혈"]},
+      "s3": {"sin": "우울", "type": "참격", "keywords": ["호흡", "출혈"]}
+    },
+    {
+      "name": "멀티크랙 사무소 대표",
+      "faction": "멀티크랙 사무소",
+      "s1": {"sin": "색욕", "type": "참격", "keywords": ["충전"]},
+      "s2": {"sin": "질투", "type": "타격", "keywords": ["충전"]},
+      "s3": {"sin": "우울", "type": "타격", "keywords": ["충전"]}
+    },
+    {
+      "name": "LCE E.G.O::홍염살",
+      "faction": ["LCE", "림버스 컴퍼니", "E.G.O 장비"],
+      "s1": {"sin": "나태", "type": "타격", "keywords": ["화상"]},
+      "s2": {"sin": "오만", "type": "타격", "keywords": ["화상"]},
+      "s3": {"sin": "분노", "type": "타격", "keywords": ["화상"]}
+    },
+    {
+      "name": "흑수 - 묘 필두",
+      "faction": ["흑수", "흑수-묘", "주살 신속"],
+      "s1": {"sin": "나태", "type": "참격", "keywords": ["파열"]},
+      "s2": {"sin": "오만", "type": "참격", "keywords": ["파열"]},
+      "s3": {"sin": "탐식", "type": "참격", "keywords": ["파열"]}
+    },
+    {
+      "name": "동부 시 협회 3과",
+      "faction": "시 협회",
+      "s1": {"sin": "분노", "type": "참격", "keywords": ["호흡", "출혈"]},
+      "s2": {"sin": "오만", "type": "참격", "keywords": ["호흡", "출혈"]},
+      "s3": {"sin": "색욕", "type": "참격", "keywords": ["호흡", "출혈"]}
+    },
+    {
+      "name": "검지 수행자:【쪽지】",
+      "faction": "검지",
+      "s1": {"sin": "나태", "type": "참격", "keywords": ["호흡", "침잠"]},
+      "s2": {"sin": "오만", "type": "참격", "keywords": ["호흡", "침잠"]},
+      "s3": {"sin": "우울", "type": "참격", "keywords": ["호흡", "침잠"]}
+    },
+    {
+      "name": "거미집 약지 제자",
+      "faction": ["약지", "신체파", "거미집"],
+      "s1": {"sin": "탐식", "type": "참격", "keywords": ["충전", "출혈"]},
+      "s2": {"sin": "질투", "type": "참격", "keywords": ["충전", "출혈"]},
+      "s3": {"sin": "색욕", "type": "참격", "keywords": ["충전", "출혈"]}
+    },
+    {
+      "name": "W사 2등급 정리 요원",
+      "faction": "W사",
+      "s1": {"sin": "질투", "type": "타격", "keywords": ["충전"]},
+      "s2": {"sin": "우울", "type": "타격", "keywords": ["충전"]},
+      "s3": {"sin": "분노", "type": "타격", "keywords": ["충전"]}
+    },
+    {
+      "name": "살아남은 로보토미 직원",
+      "faction": "로보토미 지부",
+      "s1": {"sin": "색욕", "type": "참격", "keywords": ["호흡", "파열"]},
+      "s2": {"sin": "우울", "type": "관통", "keywords": ["호흡"]},
+      "s3": {"sin": "질투", "type": "참격", "keywords": ["파열"]}
+    },
+    {
+      "name": "남부 츠바이 협회 4과",
+      "faction": "츠바이 협회",
+      "s1": {"sin": "질투", "type": "관통", "keywords": []},
+      "s2": {"sin": "우울", "type": "참격", "keywords": []},
+      "s3": {"sin": "색욕", "type": "참격", "keywords": []}
+    },
+    {
+      "name": "워더링하이츠 버틀러",
+      "faction": "워더링하이츠",
+      "s1": {"sin": "우울", "type": "참격", "keywords": ["침잠"]},
+      "s2": {"sin": "색욕", "type": "타격", "keywords": ["침잠"]},
+      "s3": {"sin": "분노", "type": "참격", "keywords": ["침잠"]}
+    },
+    {
+      "name": "LCB 수감자",
+      "faction": ["LCB", "림버스 컴퍼니"],
+      "s1": {"sin": "오만", "type": "타격", "keywords": []},
+      "s2": {"sin": "나태", "type": "타격", "keywords": []},
+      "s3": {"sin": "탐식", "type": "관통", "keywords": []}
+    }
+  ],
+  "돈키호테": [
+    {
+      "name": "W사 3등급 정리 요원",
+      "faction": "W사",
+      "s1": {"sin": "나태", "type": "참격", "keywords": ["충전", "파열"]},
+      "s2": {"sin": "우울", "type": "관통", "keywords": ["충전"]},
+      "s3": {"sin": "질투", "type": "참격", "keywords": ["충전", "파열"]}
+    },
+    {
+      "name": "남부 섕크 협회 5과 부장",
+      "faction": "섕크 협회",
+      "s1": {"sin": "색욕", "type": "관통", "keywords": []},
+      "s2": {"sin": "우울", "type": "관통", "keywords": []},
+      "s3": {"sin": "오만", "type": "관통", "keywords": []}
+    },
+    {
+      "name": "중지 작은 아우",
+      "faction": "중지",
+      "s1": {"sin": "분노", "type": "타격", "keywords": ["출혈"]},
+      "s2": {"sin": "질투", "type": "타격", "keywords": ["출혈"]},
+      "s3": {"sin": "오만", "type": "타격", "keywords": ["출혈"]}
+    },
+    {
+      "name": "T사 3등급 징수직 직원",
+      "faction": "T사",
+      "s1": {"sin": "탐식", "type": "타격", "keywords": ["진동"]},
+      "s2": {"sin": "오만", "type": "참격", "keywords": ["진동"]},
+      "s3": {"sin": "나태", "type": "타격", "keywords": ["진동"]}
+    },
+    {
+      "name": "라만차랜드 실장",
+      "faction": ["라만차랜드", "혈귀", "산초"],
+      "s1": {"sin": "나태", "type": "관통", "keywords": ["출혈", "혈찬"]},
+      "s2": {"sin": "분노", "type": "관통", "keywords": ["출혈", "혈찬"]},
+      "s3": {"sin": "색욕", "type": "관통", "keywords": ["출혈", "혈찬"]}
+    },
+    {
+      "name": "동부 섕크 협회 3과",
+      "faction": "섕크 협회",
+      "s1": {"sin": "탐식", "type": "관통", "keywords": ["호흡", "화상"]},
+      "s2": {"sin": "분노", "type": "관통", "keywords": ["호흡", "화상"]},
+      "s3": {"sin": "오만", "type": "관통", "keywords": ["호흡", "화상"]}
+    },
+    {
+      "name": "로보토미 E.G.O::사랑과 증오의 이름으로",
+      "faction": ["로보토미 본사", "E.G.O 장비"],
+      "s1": {"sin": "분노", "type": "타격", "keywords": ["충전", "침잠", "파열"]},
+      "s2": {"sin": "질투", "type": "타격", "keywords": ["충전", "침잠", "파열"]},
+      "s3": {"sin": "질투", "type": "타격", "keywords": ["충전", "침잠", "파열"]}
+    },
+    {
+      "name": "흑수 - 미",
+      "faction": ["흑수", "흑수-미"],
+      "s1": {"sin": "색욕", "type": "타격", "keywords": ["침잠", "파열"]},
+      "s2": {"sin": "탐식", "type": "타격", "keywords": ["침잠", "파열"]},
+      "s3": {"sin": "우울", "type": "타격", "keywords": ["침잠", "파열"]}
+    },
+    {
+      "name": "검지 대행자 - 개화 E.G.O::대행",
+      "faction": ["검지", "거미집"],
+      "s1": {"sin": "색욕", "type": "참격", "keywords": ["호흡", "침잠"]},
+      "s2": {"sin": "오만", "type": "참격", "keywords": ["호흡", "침잠"]},
+      "s3": {"sin": "우울", "type": "참격", "keywords": ["호흡", "침잠"]}
+    },
+    {
+      "name": "남부 시 협회 5과 부장",
+      "faction":  "시 협회",
+      "s1": {"sin": "분노", "type": "참격", "keywords": ["호흡"]},
+      "s2": {"sin": "질투", "type": "참격", "keywords": ["호흡"]},
+      "s3": {"sin": "색욕", "type": "참격", "keywords": []}
+    },
+    {
+      "name": "N사 중간 망치",
+      "faction": "N사 광신도",
+      "s1": {"sin": "색욕", "type": "관통", "keywords": ["출혈", "진동"]},
+      "s2": {"sin": "탐식", "type": "타격", "keywords": []},
+      "s3": {"sin": "분노", "type": "타격", "keywords": ["출혈", "진동"]}
+    },
+    {
+      "name": "로보토미 E.G.O::초롱",
+      "faction": ["로보토미 본사", "E.G.O 장비"],
+      "s1": {"sin": "탐식", "type": "참격", "keywords": ["파열"]},
+      "s2": {"sin": "색욕", "type": "참격", "keywords": ["파열"]},
+      "s3": {"sin": "우울", "type": "관통", "keywords": ["파열"]}
+    },
+    {
+      "name": "검계 살수",
+      "faction": "검계",
+      "s1": {"sin": "오만", "type": "관통", "keywords": ["호흡"]},
+      "s2": {"sin": "질투", "type": "참격", "keywords": ["호흡"]},
+      "s3": {"sin": "나태", "type": "참격", "keywords": ["호흡"]}
+    },
+    {
+      "name": "LCB 수감자",
+      "faction": ["LCB", "림버스 컴퍼니"],
+      "s1": {"sin": "색욕", "type": "관통", "keywords": []},
+      "s2": {"sin": "질투", "type": "관통", "keywords": ["출혈"]},
+      "s3": {"sin": "탐식", "type": "관통", "keywords": ["출혈"]}
+    }
+  ],
+  "료슈": [
+    {
+      "name": "흑운회 와카슈",
+      "faction": "흑운회",
+      "s1": {"sin": "탐식", "type": "관통", "keywords": []},
+      "s2": {"sin": "오만", "type": "관통", "keywords": ["출혈"]},
+      "s3": {"sin": "색욕", "type": "관통", "keywords": ["출혈"]}
+    },
+    {
+      "name": "료.고.파. 주방장",
+      "faction": "료.고.파",
+      "s1": {"sin": "분노", "type": "참격", "keywords": ["출혈"]},
+      "s2": {"sin": "질투", "type": "관통", "keywords": ["출혈"]},
+      "s3": {"sin": "색욕", "type": "참격", "keywords": []}
+    },
+    {
+      "name": "W사 3등급 정리 요원",
+      "faction": "W사",
+      "s1": {"sin": "색욕", "type": "참격", "keywords": ["충전"]},
+      "s2": {"sin": "오만", "type": "참격", "keywords": ["충전"]},
+      "s3": {"sin": "질투", "type": "참격", "keywords": ["충전"]}
+    },
+    {
+      "name": "에드가 가문 치프 버틀러",
+      "faction": "에드가 가문",
+      "s1": {"sin": "색욕", "type": "참격", "keywords": ["호흡"]},
+      "s2": {"sin": "오만", "type": "참격", "keywords": ["호흡"]},
+      "s3": {"sin": "분노", "type": "참격", "keywords": ["호흡"]}
+    },
+    {
+      "name": "로보토미 E.G.O::적안 · 참회",
+      "faction": ["로보토미 본사", "E.G.O 장비"],
+      "s1": {"sin": "질투", "type": "타격", "keywords": ["충전", "출혈"]},
+      "s2": {"sin": "우울", "type": "타격", "keywords": ["충전", "출혈"]},
+      "s3": {"sin": "색욕", "type": "타격", "keywords": ["충전", "출혈"]}
+    },
+    {
+      "name": "흑수 - 묘",
+      "faction": ["흑수", "흑수-묘", "주살 신속"],
+      "s1": {"sin": "색욕", "type": "참격", "keywords": ["파열"]},
+      "s2": {"sin": "탐식", "type": "참격", "keywords": ["파열"]},
+      "s3": {"sin": "오만", "type": "참격", "keywords": ["파열"]}
+    },
+    {
+      "name": "N사 E.G.O::경멸, 경외",
+      "faction": ["N사", "E.G.O 장비"],
+      "s1": {"sin": "질투", "type": "관통", "keywords": ["출혈", "진동"]},
+      "s2": {"sin": "분노", "type": "관통", "keywords": ["출혈", "진동"]},
+      "s3": {"sin": "색욕", "type": "관통", "keywords": ["출혈", "진동"]}
+    },
+    {
+      "name": "홍원 방랑무사",
+      "faction": "H사",
+      "s1": {"sin": "우울", "type": "관통", "keywords": ["호흡", "파열"]},
+      "s2": {"sin": "탐식", "type": "관통", "keywords": ["호흡", "파열"]},
+      "s3": {"sin": "오만", "type": "관통", "keywords": ["호흡", "파열"]}
+    },
+    {
+      "name": "로보토미 E.G.O::잔향 · 외로움",
+      "faction": ["로보토미 본사", "E.G.O 장비"],
+      "s1": {"sin": "나태", "type": "관통", "keywords": ["진동", "침잠", "탄환"]},
+      "s2": {"sin": "질투", "type": "관통", "keywords": ["진동", "침잠", "탄환"]},
+      "s3": {"sin": "우울", "type": "관통", "keywords": ["진동", "침잠", "탄환"]}
+    },
+    {
+      "name": "거미집의 검",
+      "faction": ["거미집", "천살성"],
+      "s1": {"sin": "색욕", "type": "참격", "keywords": ["호흡", "화상", "출혈"]},
+      "s2": {"sin": "오만", "type": "참격", "keywords": ["호흡", "화상", "출혈"]},
+      "s3": {"sin": "분노", "type": "참격", "keywords": ["호흡", "화상", "출혈"]}
+    },
+    {
+      "name": "남부 세븐 협회 6과",
+      "faction": "세븐 협회",
+      "s1": {"sin": "나태", "type": "타격", "keywords": ["파열"]},
+      "s2": {"sin": "오만", "type": "참격", "keywords": []},
+      "s3": {"sin": "파열", "type": "참격", "keywords": []}
+    },
+    {
+      "name": "LCCB 대리",
+      "faction": ["LCC", "림버스 컴퍼니"],
+      "s1": {"sin": "색욕", "type": "타격", "keywords": ["호흡"]},
+      "s2": {"sin": "탐식", "type": "타격", "keywords": ["호흡"]},
+      "s3": {"sin": "오만", "type": "관통", "keywords": ["호흡", "파열", "진동"]}
+    },
+    {
+      "name": "남부 리우 협회 4과",
+      "faction": "리우 협회",
+      "s1": {"sin": "탐식", "type": "참격", "keywords": ["화상"]},
+      "s2": {"sin": "분노", "type": "관통", "keywords": ["화상"]},
+      "s3": {"sin": "색욕", "type": "참격", "keywords": ["화상"]}
+    },
+    {
+      "name": "20구 유로지비",
+      "faction": "유로지비",
+      "s1": {"sin": "색욕", "type": "타격", "keywords": ["진동"]},
+      "s2": {"sin": "나태", "type": "관통", "keywords": ["진동"]},
+      "s3": {"sin": "탐식", "type": "관통", "keywords": ["진동"]}
+    },
+    {
+      "name": "LCB 수감자",
+      "faction": ["LCB", "림버스 컴퍼니"],
+      "s1": {"sin": "탐식", "type": "참격", "keywords": ["호흡"]},
+      "s2": {"sin": "색욕", "type": "참격", "keywords": []},
+      "s3": {"sin": "오만", "type": "참격", "keywords": ["호흡"]}
+    }
+  ],
+  "뫼르소": [
+    {
+      "name": "W사 2등급 정리 요원",
+      "faction": "W사",
+      "s1": {"sin": "질투", "type": "참격", "keywords": ["충전"]},
+      "s2": {"sin": "우울", "type": "참격", "keywords": ["파열"]},
+      "s3": {"sin": "오만", "type": "참격", "keywords": []}
+    },
+    {
+      "name": "N사 큰 망치",
+      "faction": "N사 광신도",
+      "s1": {"sin": "나태", "type": "관통", "keywords": []},
+      "s2": {"sin": "분노", "type": "타격", "keywords": ["출혈"]},
+      "s3": {"sin": "오만", "type": "관통", "keywords": ["출혈"]}
+    },
+    {
+      "name": "R사 제 4무리 코뿔소팀",
+      "faction": "R사",
+      "s1": {"sin": "질투", "type": "타격", "keywords": ["충전"]},
+      "s2": {"sin": "우울", "type": "참격", "keywords": ["충전", "출혈"]},
+      "s3": {"sin": "색욕", "type": "참격", "keywords": ["출혈"]}
+    },
+    {
+      "name": "검계 우두머리",
+      "faction": "검계",
+      "s1": {"sin": "오만", "type": "참격", "keywords": ["호흡"]},
+      "s2": {"sin": "오만", "type": "참격", "keywords": ["호흡"]},
+      "s3": {"sin": "분노", "type": "참격", "keywords": ["호흡"]}
+    },
+    {
+      "name": "남부 디에치 협회 4과 부장",
+      "faction": "디에치 협회",
+      "s1": {"sin": "탐식", "type": "타격", "keywords": ["침잠", "버림"]},
+      "s2": {"sin": "나태", "type": "관통", "keywords": ["침잠", "버림"]},
+      "s3": {"sin": "우울", "type": "타격", "keywords": ["침잠", "버림"]}
+    },
+    {
+      "name": "서부 섕크 협회 3과",
+      "faction": "섕크 협회",
+      "s1": {"sin": "오만", "type": "관통", "keywords": ["호흡", "파열"]},
+      "s2": {"sin": "탐식", "type": "관통", "keywords": ["호흡", "파열"]},
+      "s3": {"sin": "우울", "type": "관통", "keywords": ["호흡"]}
+    },
+    {
+      "name": "동부 엄지 카포 IIII",
+      "faction": "엄지",
+      "s1": {"sin": "나태", "type": "참격", "keywords": ["진동", "화상", "탄환"]},
+      "s2": {"sin": "색욕", "type": "참격", "keywords": ["진동", "화상", "탄환"]},
+      "s3": {"sin": "분노", "type": "타격", "keywords": ["진동", "화상", "탄환"]}
+    },
+    {
+      "name": "라만차랜드 왕자",
+      "faction": ["라만차랜드", "혈귀"],
+      "s1": {"sin": "질투", "type": "참격", "keywords": ["출혈", "파열", "혈찬"]},
+      "s2": {"sin": "오만", "type": "참격", "keywords": ["출혈", "파열", "혈찬"]},
+      "s3": {"sin": "색욕", "type": "참격", "keywords": ["출열", "파열"]}
+    },
+    {
+      "name": "로보토미 E.G.O::호넷【변조】",
+      "faction": ["로보토미 본사", "E.G.O 장비"],
+      "s1": {"sin": "색욕", "type": "관통", "keywords": ["화상", "출혈", "탄환"]},
+      "s2": {"sin": "분노", "type": "관통", "keywords": ["화상", "출혈", "탄환"]},
+      "s3": {"sin": "분노", "type": "관통", "keywords": ["화상", "출혈", "탄환"]}
+    },
+    {
+      "name": "약지 야수파 스튜던트",
+      "faction": ["약지", "야수파"],
+      "s1": {"sin": "분노", "type": "타격", "keywords": ["출혈", "침잠"]},
+      "s2": {"sin": "오만", "type": "타격", "keywords": ["출혈", "침잠"]},
+      "s3": {"sin": "색욕", "type": "타격", "keywords": ["출혈", "침잠"]}
+    },
+    {
+      "name": "남부 리우 협회 6과",
+      "faction": "리우 협회",
+      "s1": {"sin": "색욕", "type": "타격", "keywords": ["화상"]},
+      "s2": {"sin": "나태", "type": "타격", "keywords": ["화상"]},
+      "s3": {"sin": "분노", "type": "관통", "keywords": ["화상"]}
+    },
+    {
+      "name": "장미스패너 공방 해결사",
+      "faction": "장미스패너 공방",
+      "s1": {"sin": "우울", "type": "타격", "keywords": ["진동"]},
+      "s2": {"sin": "오만", "type": "타격", "keywords": ["진동"]},
+      "s3": {"sin": "나태", "type": "타격", "keywords": ["진동"]}
+    },
+    {
+      "name": "중지 작은 아우",
+      "faction": "중지",
+      "s1": {"sin": "나태", "type": "타격", "keywords": ["출혈"]},
+      "s2": {"sin": "질투", "type": "타격", "keywords": ["출혈"]},
+      "s3": {"sin": "분노", "type": "타격", "keywords": ["출혈"]}
+    },
+    {
+      "name": "데드레빗츠 보스",
+      "faction": "데드레빗츠",
+      "s1": {"sin": "색욕", "type": "타격", "keywords": ["파열"]},
+      "s2": {"sin": "분노", "type": "관통", "keywords": ["파열"]},
+      "s3": {"sin": "탐식", "type": "타격", "keywords": ["파열"]}
+    },
+    {
+      "name": "LCB 수감자",
+      "faction": ["LCB", "림버스 컴퍼니"],
+      "s1": {"sin": "나태", "type": "타격", "keywords": ["진동"]},
+      "s2": {"sin": "오만", "type": "타격", "keywords": []},
+      "s3": {"sin": "우울", "type": "타격", "keywords": ["진동"]}
+    }
+  ],
+  "홍루": [
+    {
+      "name": "콩콩이파 두목",
+      "faction": "콩콩이파",
+      "s1": {"sin": "질투", "type": "참격", "keywords": ["출혈"]},
+      "s2": {"sin": "색욕", "type": "관통", "keywords": []},
+      "s3": {"sin": "탐식", "type": "참격", "keywords": []}
+    },
+    {
+      "name": "K사 3등급 적출직 직원",
+      "faction": "K사",
+      "s1": {"sin": "오만", "type": "참격", "keywords": []},
+      "s2": {"sin": "탐식", "type": "타격", "keywords": ["파열"]},
+      "s3": {"sin": "나태", "type": "참격", "keywords": ["파열"]}
+    },
+    {
+      "name": "남부 디에치 협회 4과",
+      "faction": "디에치 협회",
+      "s1": {"sin": "분노", "type": "참격", "keywords": ["침잠", "버림"]},
+      "s2": {"sin": "우울", "type": "참격", "keywords": ["침잠", "버림"]},
+      "s3": {"sin": "나태", "type": "참격", "keywords": ["침잠", "버림"]}
+    },
+    {
+      "name": "20구 유로지비",
+      "faction": "유로지비",
+      "s1": {"sin": "우울", "type": "타격", "keywords": ["진동"]},
+      "s2": {"sin": "나태", "type": "관통", "keywords": ["진동"]},
+      "s3": {"sin": "탐식", "type": "관통", "keywords": ["진동"]}
+    },
+    {
+      "name": "마침표 사무소 대표",
+      "faction": "마침표 사무소",
+      "s1": {"sin": "나태", "type": "관통", "keywords": ["호흡", "탄환"]},
+      "s2": {"sin": "우울", "type": "관통", "keywords": ["호흡", "탄환"]},
+      "s3": {"sin": "오만", "type": "관통", "keywords": ["호흡", "탄환"]}
+    },
+    {
+      "name": "R사 제 4무리 순록팀",
+      "faction": "R사",
+      "s1": {"sin": "탐식", "type": "타격", "keywords": ["충전", "침잠"]},
+      "s2": {"sin": "질투", "type": "타격", "keywords": ["충전", "침잠"]},
+      "s3": {"sin": "분노", "type": "타격", "keywords": ["충전", "침잠"]}
+    },
+    {
+      "name": "홍원 군주",
+      "faction": ["H사", "군주"],
+      "s1": {"sin": "우울", "type": "참격", "keywords": ["호흡", "파열"]},
+      "s2": {"sin": "탐식", "type": "참격", "keywords": ["호흡", "파열"]},
+      "s3": {"sin": "오만", "type": "참격", "keywords": ["호흡"]}
+    },
+    {
+      "name": "거미집 약지 아비",
+      "faction": ["약지", "신체파", "거미집"],
+      "s1": {"sin": "오만", "type": "참격", "keywords": ["충전", "출혈"]},
+      "s2": {"sin": "질투", "type": "참격", "keywords": ["충전", "출혈"]},
+      "s3": {"sin": "색욕", "type": "참격", "keywords": ["충전", "출혈"]}
+    },
+    {
+      "name": "흑운회 와카슈",
+      "faction": "흑운회",
+      "s1": {"sin": "색욕", "type": "참격", "keywords": ["출혈"]},
+      "s2": {"sin": "오만", "type": "참격", "keywords": ["출혈"]},
+      "s3": {"sin": "나태", "type": "참격", "keywords": ["출혈"]}
+    },
+    {
+      "name": "남부 리우 협회 5과",
+      "faction": "리우 협회",
+      "s1": {"sin": "우울", "type": "타격", "keywords": ["화상"]},
+      "s2": {"sin": "색욕", "type": "타격", "keywords": ["화상"]},
+      "s3": {"sin": "분노", "type": "타격", "keywords": ["화상"]}
+    },
+    {
+      "name": "W사 2등급 정리 요원",
+      "faction": "W사",
+      "s1": {"sin": "오만", "type": "관통", "keywords": ["충전"]},
+      "s2": {"sin": "분노", "type": "관통", "keywords": ["충전"]},
+      "s3": {"sin": "탐식", "type": "참격", "keywords": []}
+    },
+    {
+      "name": "갈고리 사무소 해결사",
+      "faction": "갈고리 사무소",
+      "s1": {"sin": "분노", "type": "관통", "keywords": ["출혈"]},
+      "s2": {"sin": "색욕", "type": "관통", "keywords": ["출혈"]},
+      "s3": {"sin": "오만", "type": "관통", "keywords": ["출혈"]}
+    },
+    {
+      "name": "송곳니 사냥 사무소 해결사",
+      "faction": "송곳니 사냥 사무소",
+      "s1": {"sin": "탐식", "type": "타격", "keywords": ["파열"]},
+      "s2": {"sin": "오만", "type": "타격", "keywords": ["파열"]},
+      "s3": {"sin": "분노", "type": "타격", "keywords": ["파열"]}
+    },
+    {
+      "name": "LCB 수감자",
+      "faction": ["LCB", "림버스 컴퍼니"],
+      "s1": {"sin": "오만", "type": "타격", "keywords": ["침잠"]},
+      "s2": {"sin": "나태", "type": "참격", "keywords": ["침잠", "파열"]},
+      "s3": {"sin": "색욕", "type": "타격", "keywords": ["침잠", "파열"]}
+    }
+  ],
+  "히스클리프": [
+    {
+      "name": "R사 제 4무리 토끼팀",
+      "faction": "R사",
+      "s1": {"sin": "분노", "type": "관통", "keywords": ["충전", "탄환"]},
+      "s2": {"sin": "탐식", "type": "관통", "keywords": ["충전", "출혈"]},
+      "s3": {"sin": "질투", "type": "관통", "keywords": ["충전", "파열"]}
+    },
+    {
+      "name": "로보토미 E.G.O::여우비",
+      "faction": ["기술해방연합", "E.G.O 장비"],
+      "s1": {"sin": "질투", "type": "타격", "keywords": ["침잠"]},
+      "s2": {"sin": "우울", "type": "타격", "keywords": ["파열"]},
+      "s3": {"sin": "나태", "type": "관통", "keywords": ["파열"]}
+    },
+    {
+      "name": "피쿼드호 작살잡이",
+      "faction": "피쿼드호",
+      "s1": {"sin": "오만", "type": "관통", "keywords": ["호흡", "출혈"]},
+      "s2": {"sin": "질투", "type": "관통", "keywords": ["호흡", "출혈"]},
+      "s3": {"sin": "질투", "type": "관통", "keywords": ["출혈"]}
+    },
+    {
+      "name": "남부 외우피 협회 3과",
+      "faction": "외우피 협회",
+      "s1": {"sin": "질투", "type": "참격", "keywords": ["진동"]},
+      "s2": {"sin": "우울", "type": "참격", "keywords": ["진동"]},
+      "s3": {"sin": "오만", "type": "관통", "keywords": ["진동"]}
+    },
+    {
+      "name": "와일드헌트",
+      "faction": ["워더링하이츠", "와일드헌트"],
+      "s1": {"sin": "분노", "type": "참격", "keywords": ["침잠"]},
+      "s2": {"sin": "질투", "type": "참격", "keywords": ["침잠"]},
+      "s3": {"sin": "우울", "type": "타격", "keywords": ["침잠"]}
+    },
+    {
+      "name": "마침표 사무소 해결사",
+      "faction": "마침표 사무소",
+      "s1": {"sin": "우울", "type": "관통", "keywords": ["호흡", "탄환"]},
+      "s2": {"sin": "질투", "type": "관통", "keywords": ["호흡", "탄환"]},
+      "s3": {"sin": "오만", "type": "관통", "keywords": ["호흡", "탄환"]}
+    },
+    {
+      "name": "흑운회 와카슈",
+      "faction": "흑운회",
+      "s1": {"sin": "분노", "type": "참격", "keywords": ["출혈"]},
+      "s2": {"sin": "오만", "type": "참격", "keywords": ["출혈"]},
+      "s3": {"sin": "색욕", "type": "참격", "keywords": ["출혈"]}
+    },
+    {
+      "name": "W사 4등급 정리 요원 - CCA",
+      "faction": "W사",
+      "s1": {"sin": "탐식", "type": "타격", "keywords": ["충전", "파열"]},
+      "s2": {"sin": "우울", "type": "타격", "keywords": ["충전", "파열"]},
+      "s3": {"sin": "질투", "type": "타격", "keywords": ["충전", "파열"]}
+    },
+    {
+      "name": "흑수 - 유 필두",
+      "faction": ["흑수", "흑수-유"],
+      "s1": {"sin": "질투", "type": "참격", "keywords": ["화상", "파열"]},
+      "s2": {"sin": "탐식", "type": "참격", "keywords": ["화상", "파열"]},
+      "s3": {"sin": "분노", "type": "참격", "keywords": ["화상", "파열"]}
+    },
+    {
+      "name": "중지 작은 형님",
+      "faction": "중지",
+      "s1": {"sin": "분노", "type": "타격", "keywords": ["화상", "출혈"]},
+      "s2": {"sin": "질투", "type": "타격", "keywords": ["화상", "출혈"]},
+      "s3": {"sin": "질투", "type": "타격", "keywords": ["화상", "출혈"]}
+    },
+    {
+      "name": "남부 시 협회 5과",
+      "faction": "시 협회",
+      "s1": {"sin": "색욕", "type": "참격", "keywords": ["호흡"]},
+      "s2": {"sin": "분노", "type": "관통", "keywords": ["호흡"]},
+      "s3": {"sin": "질투", "type": "참격", "keywords": []}
+    },
+    {
+      "name": "N사 작은 망치",
+      "faction": "N사 광신도",
+      "s1": {"sin": "질투", "type": "관통", "keywords": ["출혈"]},
+      "s2": {"sin": "우울", "type": "타격", "keywords": []},
+      "s3": {"sin": "색욕", "type": "타격", "keywords": []}
+    },
+    {
+      "name": "남부 세븐 협회 4과",
+      "faction": "세븐 협회",
+      "s1": {"sin": "분노", "type": "참격", "keywords": ["파열"]},
+      "s2": {"sin": "질투", "type": "관통", "keywords": ["파열"]},
+      "s3": {"sin": "탐식", "type": "참격", "keywords": ["파열"]}
+    },
+    {
+      "name": "멀티크랙 사무소 해결사",
+      "faction": "멀티크랙 사무소",
+      "s1": {"sin": "분노", "type": "참격", "keywords": ["충전"]},
+      "s2": {"sin": "질투", "type": "타격", "keywords": ["충전"]},
+      "s3": {"sin": "우울", "type": "타격", "keywords": ["충전"]}
+    },
+    {
+      "name": "LCB 수감자",
+      "faction": ["LCB", "림버스 컴퍼니"],
+      "s1": {"sin": "질투", "type": "타격", "keywords": ["진동"]},
+      "s2": {"sin": "분노", "type": "타격", "keywords": ["진동"]},
+      "s3": {"sin": "색욕", "type": "타격", "keywords": []}
+    }
+  ],
+  "이스마엘": [
+    {
+      "name": "R사 제 4무리 순록팀",
+      "faction": "R사",
+      "s1": {"sin": "우울", "type": "타격", "keywords": ["충전", "침잠"]},
+      "s2": {"sin": "질투", "type": "타격", "keywords": ["충전", "침잠"]},
+      "s3": {"sin": "분노", "type": "타격", "keywords": ["침잠"]}
+    },
+    {
+      "name": "남부 리우 협회 4과",
+      "faction": "리우 협회",
+      "s1": {"sin": "색욕", "type": "타격", "keywords": ["화상"]},
+      "s2": {"sin": "분노", "type": "타격", "keywords": ["화상"]},
+      "s3": {"sin": "질투", "type": "타격", "keywords": ["화상"]}
+    },
+    {
+      "name": "어금니 보트 센터 해결사",
+      "faction": "어금니 사무소",
+      "s1": {"sin": "오만", "type": "관통", "keywords": ["침잠"]},
+      "s2": {"sin": "나태", "type": "관통", "keywords": ["진동", "침잠"]},
+      "s3": {"sin": "우울", "type": "관통", "keywords": ["침잠"]}
+    },
+    {
+      "name": "피쿼드호 선장",
+      "faction": "피쿼드호",
+      "s1": {"sin": "질투", "type": "관통", "keywords": ["출혈"]},
+      "s2": {"sin": "오만", "type": "관통", "keywords": ["출혈", "화상"]},
+      "s3": {"sin": "분노", "type": "관통", "keywords": ["호흡", "화상", "출혈"]}
+    },
+    {
+      "name": "서부 츠바이 협회 3과",
+      "faction": "츠바이 협회",
+      "s1": {"sin": "오만", "type": "타격", "keywords": ["진동"]},
+      "s2": {"sin": "질투", "type": "타격", "keywords": ["진동"]},
+      "s3": {"sin": "탐식", "type": "타격", "keywords": ["진동"]}
+    },
+    {
+      "name": "흑운회 부조장",
+      "faction": "흑운회",
+      "s1": {"sin": "질투", "type": "참격", "keywords": ["출혈"]},
+      "s2": {"sin": "오만", "type": "참격", "keywords": ["출혈"]},
+      "s3": {"sin": "색욕", "type": "참격", "keywords": ["출혈"]}
+    },
+    {
+      "name": "가주 후보",
+      "faction": "가주 후보",
+      "s1": {"sin": "우울", "type": "타격", "keywords": ["호흡", "파열"]},
+      "s2": {"sin": "탐식", "type": "타격", "keywords": ["호흡", "파열"]},
+      "s3": {"sin": "질투", "type": "참격", "keywords": ["호흡", "파열"]}
+    },
+    {
+      "name": "정사무소 대표",
+      "faction": "정사무소",
+      "s1": {"sin": "분노", "type": "참격", "keywords": ["진동", "침잠", "버림"]},
+      "s2": {"sin": "나태", "type": "참격", "keywords": ["진동", "침잠", "버림"]},
+      "s3": {"sin": "우울", "type": "참격", "keywords": ["진동", "침잠", "버림"]}
+    },
+    {
+      "name": "거미집 중지 제자",
+      "faction": ["중지", "거미집"],
+      "s1": {"sin": "색욕", "type": "타격", "keywords": ["화상", "출혈"]},
+      "s2": {"sin": "분노", "type": "타격", "keywords": ["화상", "출혈"]},
+      "s3": {"sin": "질투", "type": "타격", "keywords": ["화상", "출혈"]}
+    },
+    {
+      "name": "남부 시 협회 5과",
+      "faction": "시 협회",
+      "s1": {"sin": "질투", "type": "관통", "keywords": ["호흡"]},
+      "s2": {"sin": "색욕", "type": "참격", "keywords": ["호흡"]},
+      "s3": {"sin": "분노", "type": "참격", "keywords": ["호흡"]}
+    },
+    {
+      "name": "LCCB 대리",
+      "faction": ["LCC", "림버스 컴퍼니"],
+      "s1": {"sin": "탐식", "type": "타격", "keywords": []},
+      "s2": {"sin": "우울", "type": "타격", "keywords": ["진동"]},
+      "s3": {"sin": "오만", "type": "타격", "keywords": ["파열"]}
+    },
+    {
+      "name": "로보토미 E.G.O::출렁임",
+      "faction": ["기술해방연합", "E.G.O 장비"],
+      "s1": {"sin": "우울", "type": "타격", "keywords": ["진동", "파열"]},
+      "s2": {"sin": "분노", "type": "타격", "keywords": ["진동", "파열"]},
+      "s3": {"sin": "탐식", "type": "타격", "keywords": ["진동", "파열"]}
+    },
+    {
+      "name": "에드가 가문 버틀러",
+      "faction": ["에드가 가문"],
+      "s1": {"sin": "나태", "type": "타격", "keywords": ["호흡", "침잠"]},
+      "s2": {"sin": "탐식", "type": "참격", "keywords": ["호흡", "침잠"]},
+      "s3": {"sin": "우울", "type": "참격", "keywords": ["호흡", "침잠"]}
+    },
+    {
+      "name": "LCB 수감자",
+      "faction": ["LCB", "림버스 컴퍼니"],
+      "s1": {"sin": "분노", "type": "타격", "keywords": ["진동"]},
+      "s2": {"sin": "탐식", "type": "타격", "keywords": ["진동"]},
+      "s3": {"sin": "우울", "type": "타격", "keywords": []}
+    }
+  ],
+  "로쟈": [
+    {
+      "name": "흑운회 와카슈",
+      "faction": "흑운회",
+      "s1": {"sin": "우울", "type": "참격", "keywords": ["호흡"]},
+      "s2": {"sin": "색욕", "type": "참격", "keywords": ["호흡", "출혈"]},
+      "s3": {"sin": "오만", "type": "참격", "keywords": ["출혈"]}
+    },
+    {
+      "name": "장미스패너 공방 대표",
+      "faction": "장미스패너 공방",
+      "s1": {"sin": "오만", "type": "타격", "keywords": ["충전", "진동"]},
+      "s2": {"sin": "우울", "type": "관통", "keywords": ["진동"]},
+      "s3": {"sin": "질투", "type": "타격", "keywords": ["충전", "진동"]}
+    },
+    {
+      "name": "남부 디에치 협회 4과",
+      "faction": "디에치 협회",
+      "s1": {"sin": "우울", "type": "타격", "keywords": ["침잠", "버림"]},
+      "s2": {"sin": "질투", "type": "타격", "keywords": ["침잠", "버림"]},
+      "s3": {"sin": "나태", "type": "타격", "keywords": ["침잠", "버림"]}
+    },
+    {
+      "name": "남부 리우 협회 4과 부장",
+      "faction": "리우 협회",
+      "s1": {"sin": "오만", "type": "타격", "keywords": ["화상"]},
+      "s2": {"sin": "분노", "type": "관통", "keywords": ["화상"]},
+      "s3": {"sin": "색욕", "type": "관통", "keywords": ["화상"]}
+    },
+    {
+      "name": "북부 제뱌찌 협회 3과",
+      "faction": "제뱌찌 협회",
+      "s1": {"sin": "색욕", "type": "참격", "keywords": ["파열"]},
+      "s2": {"sin": "분노", "type": "참격", "keywords": []},
+      "s3": {"sin": "탐식", "type": "참격", "keywords": ["파열"]}
+    },
+    {
+      "name": "라만차랜드 공주",
+      "faction": ["라만차랜드", "혈귀"],
+      "s1": {"sin": "오만", "type": "관통", "keywords": ["출혈", "파열", "혈찬"]},
+      "s2": {"sin": "질투", "type": "관통", "keywords": ["출혈", "파열", "혈찬"]},
+      "s3": {"sin": "색욕", "type": "관통", "keywords": ["출혈", "파열"]}
+    },
+    {
+      "name": "흑수 - 사",
+      "faction": ["흑수", "흑수-사"],
+      "s1": {"sin": "질투", "type": "참격", "keywords": ["호흡", "파열"]},
+      "s2": {"sin": "탐식", "type": "참격", "keywords": ["호흡", "파열"]},
+      "s3": {"sin": "우울", "type": "관통", "keywords": ["호흡", "파열"]}
+    },
+    {
+      "name": "로보토미 E.G.O::눈물로 벼려낸 검",
+      "faction": ["로보토미 본사", "E.G.O 장비"],
+      "s1": {"sin": "우울", "type": "관통", "keywords": ["충전", "침잠"]},
+      "s2": {"sin": "질투", "type": "관통", "keywords": ["충전", "침잠"]},
+      "s3": {"sin": "오만", "type": "관통", "keywords": ["충전", "침잠"]}
+    },
+    {
+      "name": "R사 제 4무리 순록팀",
+      "faction": "R사",
+      "s1": {"sin": "우울", "type": "타격", "keywords": ["충전", "침잠"]},
+      "s2": {"sin": "질투", "type": "타격", "keywords": ["충전", "침잠"]},
+      "s3": {"sin": "분노", "type": "타격", "keywords": ["충전", "침잠"]}
+    },
+    {
+      "name": "약지 야수파 도슨트",
+      "faction": ["약지", "야수파"],
+      "s1": {"sin": "우울", "type": "타격", "keywords": ["출혈", "침잠"]},
+      "s2": {"sin": "질투", "type": "타격", "keywords": ["출혈", "침잠"]},
+      "s3": {"sin": "색욕", "type": "타격", "keywords": ["출혈", "침잠"]}
+    },
+    {
+      "name": "LCCB 대리",
+      "faction": ["LCC", "림버스 컴퍼니"],
+      "s1": {"sin": "오만", "type": "타격", "keywords": []},
+      "s2": {"sin": "탐식", "type": "타격", "keywords": []},
+      "s3": {"sin": "질투", "type": "타격", "keywords": []}
+    },
+    {
+      "name": "N사 중간 망치",
+      "faction": "N사 광신도",
+      "s1": {"sin": "오만", "type": "관통", "keywords": ["출혈"]},
+      "s2": {"sin": "색욕", "type": "타격", "keywords": ["출혈"]},
+      "s3": {"sin": "분노", "type": "타격", "keywords": ["출혈"]}
+    },
+    {
+      "name": "남부 츠바이 협회 5과",
+      "faction": "츠바이 협회",
+      "s1": {"sin": "분노", "type": "타격", "keywords": ["호흡"]},
+      "s2": {"sin": "나태", "type": "타격", "keywords": ["호흡"]},
+      "s3": {"sin": "우울", "type": "타격", "keywords": []}
+    },
+    {
+      "name": "T사 2등급 징수직 직원",
+      "faction": "T사",
+      "s1": {"sin": "질투", "type": "타격", "keywords": ["진동"]},
+      "s2": {"sin": "분노", "type": "타격", "keywords": ["진동"]},
+      "s3": {"sin": "나태", "type": "타격", "keywords": ["진동"]}
+    },
+    {
+      "name": "LCB 수감자",
+      "faction": ["LCB", "림버스 컴퍼니"],
+      "s1": {"sin": "탐식", "type": "참격", "keywords": ["출혈"]},
+      "s2": {"sin": "오만", "type": "참격", "keywords": ["출혈"]},
+      "s3": {"sin": "분노", "type": "참격", "keywords": ["출혈"]}
+    }
+  ],
+  "싱클레어": [
+    {
+      "name": "검계 살수",
+      "faction": "검계",
+      "s1": {"sin": "탐식", "type": "관통", "keywords": ["호흡"]},
+      "s2": {"sin": "분노", "type": "참격", "keywords": ["호흡"]},
+      "s3": {"sin": "오만", "type": "참격", "keywords": ["출혈"]}
+    },
+    {
+      "name": "쥐어들 자",
+      "faction": "N사 광신도",
+      "s1": {"sin": "우울", "type": "타격", "keywords": ["화상"]},
+      "s2": {"sin": "색욕", "type": "타격", "keywords": ["출혈", "화상"]},
+      "s3": {"sin": "분노", "type": "타격", "keywords": ["화상"]}
+    },
+    {
+      "name": "남부 섕크 협회 4과 부장",
+      "faction": "섕크 협회",
+      "s1": {"sin": "탐식", "type": "관통", "keywords": ["호흡"]},
+      "s2": {"sin": "오만", "type": "관통", "keywords": ["호흡"]},
+      "s3": {"sin": "색욕", "type": "관통", "keywords": ["호흡"]}
+    },
+    {
+      "name": "새벽 사무소 해결사",
+      "faction": "새벽 사무소",
+      "s1": {"sin": "우울", "type": "참격", "keywords": ["화상"]},
+      "s2": {"sin": "질투", "type": "참격", "keywords": ["화상"]},
+      "s3": {"sin": "분노", "type": "관통", "keywords": ["화상"]}
+    },
+    {
+      "name": "북부 제뱌찌 협회 3과",
+      "faction": "제뱌찌 협회",
+      "s1": {"sin": "색욕", "type": "타격", "keywords": ["파열"]},
+      "s2": {"sin": "탐식", "type": "타격", "keywords": ["파열"]},
+      "s3": {"sin": "분노", "type": "타격", "keywords": ["파열"]}
+    },
+    {
+      "name": "중지 작은 아우",
+      "faction": "중지",
+      "s1": {"sin": "탐식", "type": "타격", "keywords": ["출혈"]},
+      "s2": {"sin": "질투", "type": "타격", "keywords": ["출혈"]},
+      "s3": {"sin": "질투", "type": "타격", "keywords": ["출혈"]}
+    },
+    {
+      "name": "동부 엄지 솔다토 II",
+      "faction": "엄지",
+      "s1": {"sin": "색욕", "type": "관통", "keywords": ["진동"]},
+      "s2": {"sin": "나태", "type": "관통", "keywords": ["진동", "화상"]},
+      "s3": {"sin": "참격", "type": "관통", "keywords": ["진동", "화상"]}
+    },
+    {
+      "name": "흑수 - 유",
+      "faction": ["흑수", "흑수-유"],
+      "s1": {"sin": "색욕", "type": "참격", "keywords": ["화상", "파열"]},
+      "s2": {"sin": "탐식", "type": "참격", "keywords": ["화상", "파열"]},
+      "s3": {"sin": "분노", "type": "참격", "keywords": ["화상", "파열"]}
+    },
+    {
+      "name": "거미집 소지 제자",
+      "faction": "거미집",
+      "s1": {"sin": "우울", "type": "참격", "keywords": ["호흡", "출혈"]},
+      "s2": {"sin": "오만", "type": "참격", "keywords": ["호흡", "출혈"]},
+      "s3": {"sin": "분노", "type": "참격", "keywords": ["호흡", "출혈"]}
+    },
+    {
+      "name": "남부 츠바이 협회 6과",
+      "faction": "츠바이 협회",
+      "s1": {"sin": "우울", "type": "타격", "keywords": ["진동"]},
+      "s2": {"sin": "분노", "type": "타격", "keywords": ["진동"]},
+      "s3": {"sin": "나태", "type": "타격", "keywords": []}
+    },
+    {
+      "name": "마리아치 보스",
+      "faction": "마리아치",
+      "s1": {"sin": "나태", "type": "타격", "keywords": ["침잠"]},
+      "s2": {"sin": "질투", "type": "타격", "keywords": ["호흡", "침잠"]},
+      "s3": {"sin": "우울", "type": "타격", "keywords": []}
+    },
+    {
+      "name": "로보토미 E.G.O::홍적",
+      "faction": ["기술해방연합", "E.G.O 장비"],
+      "s1": {"sin": "탐식", "type": "타격", "keywords": ["파열"]},
+      "s2": {"sin": "오만", "type": "타격", "keywords": []},
+      "s3": {"sin": "색욕", "type": "관통", "keywords": ["파열"]}
+    },
+    {
+      "name": "어금니 보트 센터 해결사",
+      "faction": ["어금니", "사무소"],
+      "s1": {"sin": "우울", "type": "타격", "keywords": ["진동"]},
+      "s2": {"sin": "질투", "type": "관통", "keywords": ["진동"]},
+      "s3": {"sin": "탐식", "type": "관통", "keywords": ["진동"]}
+    },
+    {
+      "name": "서부 츠바이 협회 3과",
+      "faction": "츠바이 협회",
+      "s1": {"sin": "색욕", "type": "참격", "keywords": ["진동"]},
+      "s2": {"sin": "우울", "type": "참격", "keywords": []},
+      "s3": {"sin": "나태", "type": "타격", "keywords": ["진동"]}
+    },
+    {
+      "name": "LCB 수감자",
+      "faction": ["LCB", "림버스 컴퍼니"],
+      "s1": {"sin": "오만", "type": "참격", "keywords": ["파열"]},
+      "s2": {"sin": "분노", "type": "참격", "keywords": []},
+      "s3": {"sin": "질투", "type": "참격", "keywords": ["파열"]}
+    }
+  ],
+  "오티스": [
+    {
+      "name": "남부 세븐 협회 6과 부장",
+      "faction": ["세븐 협회"],
+      "s1": {"sin": "탐식", "type": "타격", "keywords": ["파열"]},
+      "s2": {"sin": "나태", "type": "참격", "keywords": ["파열"]},
+      "s3": {"sin": "색욕", "type": "타격", "keywords": []}
+    },
+    {
+      "name": "어금니 사무소 해결사",
+      "faction": ["어금니 사무소"],
+      "s1": {"sin": "분노", "type": "참격", "keywords": ["버림"]},
+      "s2": {"sin": "색욕", "type": "타격", "keywords": ["진동", "버림"]},
+      "s3": {"sin": "나태", "type": "타격", "keywords": ["진동", "버림"]}
+    },
+    {
+      "name": "로보토미 E.G.O::마탄",
+      "faction": ["로보토미 본사", "E.G.O 장비"],
+      "s1": {"sin": "분노", "type": "타격", "keywords": ["화상"]},
+      "s2": {"sin": "오만", "type": "타격", "keywords": ["화상"]},
+      "s3": {"sin": "오만", "type": "관통", "keywords": ["화상"]}
+    },
+    {
+      "name": "워더링하이츠 치프 버틀러",
+      "faction": "워더링하이츠",
+      "s1": {"sin": "오만", "type": "타격", "keywords": ["침잠"]},
+      "s2": {"sin": "우울", "type": "타격", "keywords": ["침잠"]},
+      "s3": {"sin": "색욕", "type": "타격", "keywords": ["침잠"]}
+    },
+    {
+      "name": "W사 3등급 정리 요원 팀장",
+      "faction":"W사",
+      "s1": {"sin": "오만", "type": "타격", "keywords": ["충전"]},
+      "s2": {"sin": "질투", "type": "타격", "keywords": ["충전"]},
+      "s3": {"sin": "우울", "type": "참격", "keywords": ["충전", "파열"]}
+    },
+    {
+      "name": "라만차랜드 이발사",
+      "faction": ["라만차랜드", "혈귀"],
+      "s1": {"sin": "탐식", "type": "참격", "keywords": ["출혈", "혈찬"]},
+      "s2": {"sin": "색욕", "type": "참격", "keywords": ["출혈", "혈찬"]},
+      "s3": {"sin": "분노", "type": "참격", "keywords": ["출혈"]}
+    },
+    {
+      "name": "흑수 - 묘",
+      "faction": ["흑수", "흑수-묘", "주살 신속"],
+      "s1": {"sin": "나태", "type": "참격", "keywords": ["파열"]},
+      "s2": {"sin": "탐식", "type": "참격", "keywords": ["파열"]},
+      "s3": {"sin": "우울", "type": "참격", "keywords": ["파열"]}
+    },
+    {
+      "name": "T사 3등급 강력징수직 직원",
+      "faction": "T사",
+      "s1": {"sin": "오만", "type": "타격", "keywords": ["진동"]},
+      "s2": {"sin": "나태", "type": "타격", "keywords": ["진동"]},
+      "s3": {"sin": "색욕", "type": "타격", "keywords": ["진동"]}
+    },
+    {
+      "name": "LCA 우제트 선봉 3팀 팀장",
+      "faction": ["LCA", "림버스 컴퍼니"],
+      "s1": {"sin": "오만", "type": "참격", "keywords": ["진동", "침잠"]},
+      "s2": {"sin": "나태", "type": "참격", "keywords": ["진동", "침잠"]},
+      "s3": {"sin": "우울", "type": "관통", "keywords": ["진동", "침잠", "탄환"]}
+    },
+    {
+      "name": "거미집 중지 아비",
+      "faction": "중지",
+      "s1": {"sin": "색욕", "type": "타격", "keywords": ["화상", "출혈"]},
+      "s2": {"sin": "질투", "type": "타격", "keywords": ["화상", "출혈"]},
+      "s3": {"sin": "질투", "type": "타격", "keywords": ["화상", "출혈"]}
+    },
+    {
+      "name": "검계 살수",
+      "faction": "검계",
+      "s1": {"sin": "분노", "type": "참격", "keywords": ["호흡"]},
+      "s2": {"sin": "색욕", "type": "관통", "keywords": ["호흡"]},
+      "s3": {"sin": "오만", "type": "참격", "keywords": []}
+    },
+    {
+      "name": "G사 부장",
+      "faction": "G사",
+      "s1": {"sin": "나태", "type": "관통", "keywords": []},
+      "s2": {"sin": "탐식", "type": "타격", "keywords": []},
+      "s3": {"sin": "우울", "type": "타격", "keywords": ["침잠"]}
+    },
+    {
+      "name": "남부 섕크 협회 4과",
+      "faction": "섕크 협회",
+      "s1": {"sin": "오만", "type": "관통", "keywords": ["호흡"]},
+      "s2": {"sin": "우울", "type": "관통", "keywords": ["호흡"]},
+      "s3": {"sin": "색욕", "type": "관통", "keywords": ["호흡"]}
+    },
+    {
+      "name": "약지 점묘파 스튜던트",
+      "faction": ["약지", "점묘파"],
+      "s1": {"sin": "색욕", "type": "관통", "keywords": ["출혈"]},
+      "s2": {"sin": "분노", "type": "관통", "keywords": ["출혈"]},
+      "s3": {"sin": "탐식", "type": "관통", "keywords": ["출혈"]}
+    },
+    {
+      "name": "LCB 수감자",
+      "faction": ["LCB", "림버스 컴퍼니"],
+      "s1": {"sin": "나태", "type": "관통", "keywords": ["파열"]},
+      "s2": {"sin": "오만", "type": "참격", "keywords": []},
+      "s3": {"sin": "우울", "type": "관통", "keywords": ["파열"]}
+    }
+  ],
+  "그레고르": [
+    {
+      "name": "G사 일등대리",
+      "faction": "G사",
+      "s1": {"sin": "탐식", "type": "참격", "keywords": []},
+      "s2": {"sin": "나태", "type": "참격", "keywords": ["파열"]},
+      "s3": {"sin": "색욕", "type": "관통", "keywords": []}
+    },
+    {
+      "name": "남부 츠바이 협회 4과",
+      "faction": "츠바이 협회",
+      "s1": {"sin": "나태", "type": "참격", "keywords": []},
+      "s2": {"sin": "탐식", "type": "참격", "keywords": []},
+      "s3": {"sin": "우울", "type": "참격", "keywords": []}
+    },
+    {
+      "name": "쌍갈고리 해적단 부선장",
+      "faction": "쌍갈고리 해적단",
+      "s1": {"sin": "나태", "type": "관통", "keywords": ["호흡", "출혈"]},
+      "s2": {"sin": "오만", "type": "관통", "keywords": ["호흡", "출혈"]},
+      "s3": {"sin": "우울", "type": "관통", "keywords": ["호흡", "출혈", "탄환"]}
+    },
+    {
+      "name": "에드가 가문 승계자",
+      "faction":"에드가 가문",
+      "s1": {"sin": "질투", "type": "참격", "keywords": ["침잠"]},
+      "s2": {"sin": "우울", "type": "참격", "keywords": ["침잠"]},
+      "s3": {"sin": "색욕", "type": "참격", "keywords": ["침잠"]}
+    },
+    {
+      "name": "라만차랜드 신부",
+      "faction": ["라만차랜드", "혈귀"],
+      "s1": {"sin": "탐식", "type": "타격", "keywords": ["출혈", "파열"]},
+      "s2": {"sin": "오만", "type": "타격", "keywords": ["출혈", "파열", "혈찬"]},
+      "s3": {"sin": "색욕", "type": "타격", "keywords": ["출혈", "파열"]}
+    },
+    {
+      "name": "불주먹 사무소 생존자",
+      "faction": "불주먹 사무소",
+      "s1": {"sin": "색욕", "type": "타격", "keywords": ["화상"]},
+      "s2": {"sin": "분노", "type": "타격", "keywords": ["화상"]},
+      "s3": {"sin": "분노", "type": "타격", "keywords": ["화상"]}
+    },
+    {
+      "name": "흑수 - 사",
+      "faction": ["흑수", "흑수-사"],
+      "s1": {"sin": "오만", "type": "참격", "keywords": ["호흡", "파열"]},
+      "s2": {"sin": "탐식", "type": "참격", "keywords": ["호흡", "파열"]},
+      "s3": {"sin": "질투", "type": "관통", "keywords": ["호흡", "파열"]}
+    },
+    {
+      "name": "밤의 송곳 카피타노",
+      "faction": "밤의 송곳",
+      "s1": {"sin": "나태", "type": "관통", "keywords": ["출혈", "진동"]},
+      "s2": {"sin": "색욕", "type": "관통", "keywords": ["출혈", "진동"]},
+      "s3": {"sin": "오만", "type": "관통", "keywords": ["출혈", "진동"]}
+    },
+    {
+      "name": "로보토미 E.G.O::램프",
+      "faction": ["LCE", "림버스 컴퍼니", "E.G.O 장비"],
+      "s1": {"sin": "분노", "type": "관통", "keywords": ["화상", "침잠"]},
+      "s2": {"sin": "우울", "type": "관통", "keywords": ["화상", "침잠"]},
+      "s3": {"sin": "오만", "type": "관통", "keywords": ["화상", "침잠"]}
+    },
+    {
+      "name": "LCE E.G.O::AEDD",
+      "faction": ["LCE", "림버스 컴퍼니", "E.G.O 장비"],
+      "s1": {"sin": "탐식", "type": "참격", "keywords": ["충전", "파열"]},
+      "s2": {"sin": "우울", "type": "참격", "keywords": ["충전", "파열"]},
+      "s3": {"sin": "질투", "type": "참격", "keywords": ["충전", "파열"]}
+    },
+    {
+      "name": "남부 리우 협회 6과",
+      "faction": "리우 협회",
+      "s1": {"sin": "분노", "type": "타격", "keywords": ["화상"]},
+      "s2": {"sin": "색욕", "type": "타격", "keywords": ["화상"]},
+      "s3": {"sin": "나태", "type": "타격", "keywords": ["화상"]}
+    },
+    {
+      "name": "료.고.파. 조수",
+      "faction": "료.고.파",
+      "s1": {"sin": "색욕", "type": "타격", "keywords": ["출혈"]},
+      "s2": {"sin": "탐식", "type": "참격", "keywords": ["출혈"]},
+      "s3": {"sin": "질투", "type": "참격", "keywords": ["출혈"]}
+    },
+    {
+      "name": "장미스패너 공방 해결사",
+      "faction": "장미스패너 공방",
+      "s1": {"sin": "탐식", "type": "참격", "keywords": ["충전", "파열"]},
+      "s2": {"sin": "질투", "type": "관통", "keywords": ["충전", "파열", "진동"]},
+      "s3": {"sin": "우울", "type": "참격", "keywords": ["파열"]}
+    },
+    {
+      "name": "흑운회 부조장",
+      "faction": "흑운회",
+      "s1": {"sin": "나태", "type": "참격", "keywords": ["출혈"]},
+      "s2": {"sin": "색욕", "type": "타격", "keywords": ["출혈"]},
+      "s3": {"sin": "우울", "type": "참격", "keywords": ["출혈"]}
+    },
+    {
+      "name": "LCB 수감자",
+      "faction": ["LCB", "림버스 컴퍼니"],
+      "s1": {"sin": "우울", "type": "참격", "keywords": ["파열"]},
+      "s2": {"sin": "탐식", "type": "관통", "keywords": ["파열"]},
+      "s3": {"sin": "나태", "type": "관통", "keywords": []}
+    }
+  ]
+}

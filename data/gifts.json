@@ -1,0 +1,1838 @@
+{
+  "화상": [ 
+    {
+     "id": "GWR_2_001",
+      "name": "혈염도",
+      "img": "",
+      "grade": 2,
+      "cats": ["화상"],
+      "type": "active_faction",
+      "faction": "흑수-유",
+      "min": 1,
+      "desc": "전투 편성 중 흑수-유 인격 1명 이상"
+    },
+    {
+      "id": "GWR_3_001",
+      "name": "로열 젤리 퍼퓸",
+      "img": "",
+      "grade": 3,
+      "cats": ["화상"],
+      "type": "position",
+      "targetSlot": 5,
+      "desc": "5번 슬롯에 인격 배치"
+    },
+    {
+      "id": "GWR_4_001",
+      "name": "진혼",
+      "img": "",
+      "grade": 4,
+      "cats": ["화상"],
+      "type": "active_kw",
+      "kw": "화상",
+      "min": 5,
+      "desc": "전투 편성 중 화상 인격 5명 이상"
+    },
+    {
+      "id": "GWR_4_002",
+      "name": "훔쳐온 불꽃",
+      "img": "",
+      "grade": 4,
+      "cats": ["화상"],
+      "type": "active_kw",
+      "kw": "화상",
+      "min": 5,
+      "desc": "전투 편성 중 화상 인격 5명 이상"
+    },
+    {
+      "id": "GWR_4_003",
+      "name": "제식 복장 - 리우 협회",
+      "img": "",
+      "grade": 4,
+      "cats": ["화상"],
+      "type": "active_kw",
+      "kw": "화상",
+      "min": 5,
+      "extras": [
+        { "type": "faction", "val": "리우 협회" }
+      ],
+      "desc": "전투 편성 중 화상 인격 5명 이상 그 중 리우 협회 인격 대상"
+    }
+  ],
+  "출혈": [
+    {
+      "id": "GLU_2_001",
+      "name": "경외심",
+      "img": "",
+      "grade": 2,
+      "cats": ["출혈"],
+      "type": "position",
+      "targetSlot": [0,1,2],
+      "desc": "0,1,2번 슬롯에 인격 배치"
+    },
+    {
+      "id": "GLU_2_002",
+      "name": "범작",
+      "img": "",
+      "grade": 2,
+      "cats": ["출혈"],
+      "type": "active_faction",
+      "faction": "약지",
+      "min": 1,
+      "desc": "전투 편성 중 약지 인격 1명 이상"
+    },
+    {
+      "id": "GLU_2_003",
+      "name": "워킹 베이스",
+      "img": "",
+      "grade": 2,
+      "cats": ["출혈"],
+      "type": "position",
+      "targetSlot": [2,3],
+      "desc": "2,3번 슬롯에 인격 배치"
+    },
+    {
+      "id": "GLU_2_004",
+      "name": "못과 망치의 책",
+      "img": "",
+      "grade": 2,
+      "cats": ["출혈"],
+      "type": "active_faction",
+      "faction": "N사 광신도",
+      "min": 1,
+      "desc": "전투 편성 중 N사 광신도 인격 1명 이상"
+    },
+    {
+      "id": "GLU_3_001",
+      "name": "치성",
+      "img": "",
+      "grade": 3,
+      "cats": ["출혈"],
+      "type": "active_kw",
+      "kw": "출혈",
+      "min": 5,
+      "desc": "전투 편성 중 출혈 인격 5명 이상"
+    },
+    {
+      "id": "GLU_3_002",
+      "name": "혈향도래",
+      "img": "",
+      "grade": 3,
+      "cats": ["출혈"],
+      "type": "total_kw",
+      "kw": "출혈",
+      "min": 5,
+      "extras": [
+        { "type": "global_kw_count", "kw": "출혈", "min": 10 }
+      ],
+      "desc": "전투 편성 중 출혈 인격 5명 이상, 전투 전체 출혈 키워드 10회 이상"
+    },
+    {
+      "id": "GLU_3_003",
+      "name": "조각난 칼날",
+      "img": "",
+      "grade": 3,
+      "cats": ["출혈"],
+      "type": "active_faction",
+      "faction": "흑운회",
+      "min": 1,
+      "desc": "전투 편성 중 흑운회 인격 1명 이상"
+    },
+    {
+      "id": "GLU_3_004",
+      "name": "피로 된 살점, 살점으로 된 피",
+      "img": "",
+      "grade": 3,
+      "cats": ["출혈"],
+      "type": "active_kw",
+      "kw": "혈찬",
+      "min": 1,
+      "desc": "전투 편성 중 혈찬 키워드 보유 인격 1명 이상"
+    },
+    {
+      "id": "GLU_3_005",
+      "name": "경혈식 글레이브",
+      "img": "",
+      "grade": 3,
+      "cats": ["출혈"],
+      "type": "active_kw",
+      "kw": "혈찬",
+      "min": 1,
+      "desc": "전투 편성 중 혈찬 키워드 보유 인격 1명 이상"
+    },
+    {
+      "id": "GLU_4_001",
+      "name": "피안개",
+      "img": "",
+      "grade": 4,
+      "cats": ["출혈"],
+      "replaces": ["GLU_3_001"],
+      "type": "active_kw",
+      "kw": "출혈",
+      "min": 5,
+      "desc": "전투 편성 중 출혈 인격 5명 이상 (치성과 중복 불가)"
+    },
+    {
+      "id": "GLU_4_002",
+      "name": "출혈성 쇼크",
+      "img": "",
+      "grade": 4,
+      "cats": ["출혈"],
+      "type": "active_kw",
+      "kw": "출혈",
+      "min": 5,
+      "desc": "전투 편성 중 출혈 인격 5명 이상"
+    },
+    {
+      "id": "GLU_4_003",
+      "name": "수작",
+      "img": "",
+      "grade": 4,
+      "cats": ["출혈"],
+      "replaces": ["GLU_2_002"],
+      "type": "active_faction",
+      "faction": "약지",
+      "min": 1,
+      "desc": "전투 편성 중 약지 인격 1명 이상 (범작과 중복 불가)"
+    },
+    {
+      "id": "GLU_4_004",
+      "name": "완전함",
+      "img": "",
+      "grade": 4,
+      "cats": ["출혈"],
+      "replaces": ["GLU_2_004"],
+      "type": "active_faction",
+      "faction": "N사 광신도",
+      "min": 1,
+      "desc": "전투 편성 중 N사 광신도 인격 1명 이상 (못과 망치의 책과 중복 불가)"
+    },
+    {
+      "id": "GLU_4_005",
+      "name": "퍼레이드의 가면",
+      "img": "",
+      "grade": 4,
+      "cats": ["출혈"],
+      "type": "active_faction",
+      "faction": "혈귀",
+      "min": 1,
+      "desc": "전투 편성 중 혈귀 인격 1명 이상"
+    },
+    {
+      "id": "GLU_4_006",
+      "name": "미니어처 대관람차",
+      "img": "",
+      "grade": 4,
+      "cats": ["출혈"],
+      "replaces": ["GLU_4_005"],
+      "type": "active_faction",
+      "faction": "혈귀",
+      "min": 1,
+      "desc": "전투 편성 중 혈귀 인격 1명 이상 (퍼레이드의 가면과 중복 불가)"
+    },
+    {
+      "id": "GLU_4_007",
+      "name": "절경",
+      "img": "",
+      "grade": 4,
+      "cats": ["출혈"],
+      "replaces": ["GLU_3_003", "GAS_3_004"],
+      "type": "active_faction",
+      "faction": "흑운회",
+      "min": 3,
+      "desc": "전투 편성 중 흑운회 인격 3명 이상 (조각난 칼날과 중복 불가)"
+    },
+    {
+      "id": "GLU_4_008",
+      "name": "떨어진 한 방울",
+      "img": "",
+      "grade": 4,
+      "cats": ["출혈"],
+      "type": "active_kw",
+      "kw": "혈찬",
+      "min": 3,
+      "desc": "전투 편성 중 혈찬 키워드 보유 인격 3명 이상"
+    },
+    {
+      "id": "GLU_4_009",
+      "name": "가족의 원망",
+      "img": "",
+      "grade": 4,
+      "cats": ["출혈"],
+      "type": "active_faction",
+      "faction": "라만차랜드",
+      "min": 1,
+      "desc": "전투 편성 중 라만차랜드 인격 1명 이상"
+    },
+    {
+      "id": "GLU_4_010",
+      "name": "작품이 된 마에스트로 링",
+      "img": "",
+      "grade": 4,
+      "cats": ["출혈"],
+      "type": "active_faction",
+      "faction": "약지",
+      "min": 1,
+      "desc": "전투 편성 중 약지 인격 1명 이상"
+    },
+    {
+      "id": "GLU_4_011",
+      "name": "수작 : 진화하는 약동",
+      "img": "",
+      "grade": 4,
+      "cats": ["출혈"],
+      "type": "active_faction",
+      "faction": "약지",
+      "min": 2,
+      "extras": [
+        { "type": "faction", "val": "신체파" }
+      ],
+      "desc": "약지 2인 편성 시 발동. 신체파 소속은 금색 표시."
+    },
+    {
+      "id": "GLU_4_012",
+      "name": "수작 : 박제된 야성",
+      "img": "",
+      "grade": 4,
+      "cats": ["출혈"],
+      "type": "active_faction",
+      "faction": "약지",
+      "min": 2,
+      "extras": [
+        { "type": "faction", "val": "야수파" }
+      ],
+      "desc": "약지 2인 편성 시 발동. 야수파 소속은 금색 표시."
+    },
+    {
+      "id": "GLU_4_013",
+      "name": "못과 망치",
+      "img": "",
+      "grade": 4,
+      "cats": ["출혈"],
+      "type": "active_faction",
+      "faction": "N사 광신도",
+      "min": 1,
+      "desc": "전투 편성 중 N사 광신도 인격 1명 이상"
+    },
+    {
+      "id": "GLU_4_014",
+      "name": "회전 목마 모형",
+      "img": "",
+      "grade": 4,
+      "cats": ["출혈"],
+      "type": "active_faction",
+      "faction": "라만차랜드",
+      "min": 1,
+      "extras": [
+        { "type": "faction", "val": "산초" }
+      ],
+      "desc": "전투 편성 중 라만차랜드 인격 1명 이상. 산초 소속은 금색 표시."
+    }
+  ],
+  "진동": [
+    {
+      "id": "GSL_1_001",
+      "name": "불 꺼진 랜턴",
+      "img": "",
+      "grade": 1,
+      "cats": ["진동"],
+      "type": "position",
+      "targetSlot": 6,
+      "desc": "6번 슬롯에 인격 배치"
+    },
+    {
+      "id": "GSL_2_001",
+      "name": "시큼한 주향",
+      "img": "",
+      "grade": 2,
+      "cats": ["진동"],
+      "type": "position",
+      "targetSlot": [0,1,2],
+      "desc": "0, 1, 2번 슬롯에 인격 배치"
+    },
+    {
+      "id": "GSL_2_002",
+      "name": "감합된 톱니바퀴",
+      "img": "",
+      "grade": 2,
+      "cats": ["진동"],
+      "type": "active_kw",
+      "kw": "진동",
+      "min": 5,
+      "desc": "전투 편성 중 진동 인격 5명 이상"
+    },
+    {
+      "id": "GSL_2_003",
+      "name": "오더메이드",
+      "img": "",
+      "grade": 2,
+      "cats": ["진동"],
+      "type": "position",
+      "targetSlot": 2,
+      "desc": "2번 슬롯에 인격 배치"
+    },
+    {
+      "id": "GSL_2_004",
+      "name": "흑철마갑",
+      "img": "",
+      "grade": 2,
+      "cats": ["진동"],
+      "type": "active_faction",
+      "faction": "흑수_오",
+      "min": 1,
+      "desc": "전투 편성 중 흑수_오 인격 1명 이상"
+    },
+    {
+      "id": "GSL_3_001",
+      "name": "톱니바퀴 태엽",
+      "img": "",
+      "grade": 3,
+      "cats": ["진동"],
+      "type": "position",
+      "targetSlot": [0,1],
+      "desc": "0, 1번 슬롯에 인격 배치"
+    },
+    {
+      "id": "GSL_3_002",
+      "name": "진원점",
+      "img": "",
+      "grade": 3,
+      "cats": ["진동"],
+      "type": "active_kw",
+      "kw": "진동",
+      "min": 5,
+      "desc": "전투 편성 중 진동 인격 5명 이상"
+    },
+    {
+      "id": "GSL_3_003",
+      "name": "그림자 괴물",
+      "img": "",
+      "grade": 3,
+      "cats": ["진동"],
+      "replaces": ["GSL_1_001", "AGN_2_004"],
+      "type": "position",
+      "targetSlot": [0,1,6,7],
+      "desc": "0, 1, 6, 7번 슬롯에 인격 배치"
+    },
+    {
+      "id": "GSL_4_001",
+      "name": "연성진동",
+      "img": "",
+      "grade": 4,
+      "cats": ["진동"],
+      "replaces": ["GSL_2_002"],
+      "type": "active_kw",
+      "kw": "진동",
+      "min": 5,
+      "desc": "전투 편성 중 진동 인격 5명 이상"
+    },
+    {
+      "id": "GSL_4_002",
+      "name": "무진팔방종",
+      "img": "",
+      "grade": 4,
+      "cats": ["진동"],
+      "replaces": ["GSL_3_001", "GSL_3_002"],
+      "type": "active_kw",
+      "kw": "진동",
+      "min": 5,
+      "desc": "전투 편성 중 진동 인격 5명 이상"
+    },
+    {
+      "id": "GSL_4_003",
+      "name": "회중시계 : 타입 L",
+      "img": "",
+      "grade": 4,
+      "cats": ["진동"],
+      "consumes": ["은시계", "은시침"],
+      "type": "active_kw",
+      "kw": "진동",
+      "min": 5,
+      "desc": "전투 편성 중 진동 인격 5명 이상"
+    },
+    {
+      "id": "GSL_4_004",
+      "name": "회중시계 : 타입 E",
+      "img": "",
+      "grade": 4,
+      "cats": ["진동"],
+      "consumes": ["은시계", "동시침"],
+      "type": "active_kw",
+      "kw": "진동",
+      "min": 5,
+      "desc": "전투 편성 중 진동 인격 5명 이상"
+    },
+    {
+      "id": "GSL_4_005",
+      "name": "회중시계 : 타입 Y",
+      "img": "",
+      "grade": 4,
+      "cats": ["진동"],
+      "consumes": ["동시계", "은시침"],
+      "type": "active_kw",
+      "kw": "진동",
+      "min": 5,
+      "extras": [
+        { "type": "faction", "val": "유로지비" }
+      ],
+      "desc": "전투 편성 중 진동 인격 5명 이상. 유로지비 소속은 금색 표시."
+    },
+    {
+      "id": "GSL_4_006",
+      "name": "회중시계 : 타입 P",
+      "img": "",
+      "grade": 4,
+      "cats": ["진동"],
+      "consumes": ["동시계", "동시침"],
+      "type": "active_kw",
+      "kw": "진동",
+      "min": 5,
+      "desc": "전투 편성 중 진동 인격 5명 이상"
+    },
+    {
+      "id": "GSL_4_007",
+      "name": "초정밀 시간 가속 장치",
+      "img": "",
+      "grade": 4,
+      "cats": ["진동"],
+      "type": "position",
+      "targetSlot": 0,
+      "desc": "0번 슬롯에 인격 배치"
+    },
+    {
+      "id": "GSL_4_008",
+      "name": "카포를 위하여",
+      "img": "",
+      "grade": 4,
+      "cats": ["진동"],
+      "type": "position",
+      "targetSlot": 0,
+      "extras": [
+        { "type": "active_kw", "val": "탄환" }
+      ],
+      "desc": "0번 슬롯에 인격 배치. 탄환 키워드 보유 시 금색 표시"
+    },
+    {
+      "id": "GSL_4_009",
+      "name": "불완전한 예지안",
+      "img": "",
+      "grade": 4,
+      "cats": ["진동"],
+      "type": "position",
+      "targetSlot": 0,
+      "desc": "0번 슬롯에 인격 배치"
+    }
+  ],
+  "파열": [
+    {
+      "id": "GGL_2_001",
+      "name": "해진 우산",
+      "img": "",
+      "grade": 2,
+      "cats": ["파열"],
+      "type": "position",
+      "targetSlot": [0,1,2],
+      "desc": "0,1,2번 슬롯에 인격 배치"
+    },
+    {
+      "id": "GGL_2_002",
+      "name": "가시오랏줄",
+      "img": "",
+      "grade": 2,
+      "cats": ["파열"],
+      "type": "active_kw",
+      "kw": "파열",
+      "min": 5,
+      "desc": "전투 편성 중 파열 인격 5명 이상"
+    },
+    {
+      "id": "GGL_2_003",
+      "name": "덕목 - 지(智)",
+      "img": "",
+      "grade": 2,
+      "cats": ["파열"],
+      "type": "position",
+      "targetSlot": 5,
+      "extras": [
+        { "type": "faction", "val": "가주 후보" }
+      ],
+      "desc": "5번 슬롯에 인격 배치. 가주 후보 소속은 금색 표시."
+    },
+    {
+      "id": "GGL_2_004",
+      "name": "덕목 - 용(勇)",
+      "img": "",
+      "grade": 2,
+      "cats": ["파열"],
+      "type": "position",
+      "targetSlot": 5,
+      "extras": [
+        { "type": "faction", "val": "가주 후보" }
+      ],
+      "desc": "5번 슬롯에 인격 배치. 가주 후보 소속은 금색 표시."
+    },
+    {
+      "id": "GGL_2_005",
+      "name": "덕목 - 인(仁)",
+      "img": "",
+      "grade": 2,
+      "cats": ["파열"],
+      "type": "position",
+      "targetSlot": 5,
+      "extras": [
+        { "type": "faction", "val": "가주 후보" }
+      ],
+      "desc": "5번 슬롯에 인격 배치. 가주 후보 소속은 금색 표시."
+    },
+    {
+      "id": "GGL_2_006",
+      "name": "흑수환 - 묘",
+      "img": "",
+      "grade": 2,
+      "cats": ["파열"],
+      "type":"active_faction",
+      "faction": "흑수-묘",
+      "min": 1,
+      "desc": "전투 편성 중 흑수-묘 인격 1명 이상"
+    },
+    {
+      "id": "GGL_3_001",
+      "name": "죽음바라기",
+      "img": "",
+      "grade": 3,
+      "cats": ["파열"],
+      "type":"position",
+      "targetSlot": [0,1],
+      "desc": "0,1번 슬롯에 인격 배치"
+    },
+    {
+      "id": "GGL_3_002",
+      "name": "기괴한 석상",
+      "img": "",
+      "grade": 3,
+      "cats": ["파열"],
+      "type":"active_kw",
+      "kw": "파열",
+      "min": 5,
+      "desc": "전투 편성 중 파열 인격 5명 이상"
+    },
+    {
+      "id": "GGL_3_003",
+      "name": "거울 속의 꽃",
+      "img": "",
+      "grade": 3,
+      "cats": ["파열"],
+      "type":"total_kw_multi",
+      "kws": ["파열", "호흡"],
+      "min": 1,
+      "extras": [
+        { "type": "global_kw_count", "kws": ["파열", "호흡"], "min": 6 },
+        { "type": "global_kw_count", "kws": ["파열", "호흡"], "min": 10 }
+      ],
+      "desc": "전투 편성 중 파열 또는 호흡 키워드 보유 인격 1명 이상, 전투 전체 파열 또는 호흡 키워드 6회 이상, 전투 전체 파열 또는 호흡 키워드 10회 이상"
+    },
+    {
+      "id": "GGL_4_001",
+      "name": "황홀경",
+      "img": "",
+      "grade": 4,
+      "cats": ["파열"],
+      "replaces": ["GGL_2_002"],
+      "type":"active_kw",
+      "kw": "파열",
+      "min": 5,
+      "desc": "전투 편성 중 파열 인격 5명 이상 (가시오랏줄과 중복 불가)"
+    },
+    {
+      "id": "GGL_4_002",
+      "name": "파탄",
+      "img": "",
+      "grade": 4,
+      "cats": ["파열"],
+      "replaces": ["GGL_3_002"],
+      "type":"active_kw",
+      "kw": "파열",
+      "min": 5,
+      "desc": "전투 편성 중 파열 인격 5명 이상 (기괴한 석상과 중복 불가)"
+    },
+    {
+      "id": "GGL_4_003",
+      "name": "부치지 못한 편지",
+      "img": "",
+      "grade": 4,
+      "cats": ["파열"],
+      "replaces": ["GGL_2_001"],
+      "type":"position",
+      "targetSlot": [0,1],
+      "desc": "0,1번 슬롯에 인격 배치 (해진 우산과 중복 불가)"
+    },
+    {
+      "id": "GGL_4_004",
+      "name": "생강꽃, 안경 그리고 전해진 편지",
+      "img": "",
+      "grade": 4,
+      "cats": ["파열"],
+      "replaces": ["GGL_2_001", "GGL_4_003"],
+      "type":"position",
+      "targetSlot": [0,1,2],
+      "desc": "0,1,2번 슬롯에 인격 배치 (해진 우산과 부치지 못한 편지와 중복 불가)"
+    },
+    {
+      "id": "GGL_4_005",
+      "name": "이전칠자",
+      "img": "",
+      "grade": 4,
+      "cats": ["파열"],
+      "type":"active_kw",
+      "kw": "파열",
+      "min": 5,
+      "desc": "전투 편성 중 파열 인격 5명 이상"
+    },
+    {
+      "id": "GGL_4_006",
+      "name": "절차탁마(切磋琢磨)",
+      "img": "",
+      "grade": 4,
+      "cats": ["파열"],
+      "replaces": ["GGL_2_003", "GGL_2_004", "GGL_2_005"],
+      "type": "position",
+      "targetSlot": 5,
+      "extras": [
+        { "type": "faction", "val": "가주 후보" }
+      ],
+      "desc": "5번 슬롯에 인격 배치. 가주 후보 소속은 금색 표시."
+    },
+    {
+      "id": "GGL_4_007",
+      "name": "암약",
+      "img": "",
+      "grade": 4,
+      "cats": ["파열"],
+      "replaces":["GGL_2_006","GAS_3_005"],
+      "type": "active_faction",
+      "faction": "흑수-묘",
+      "min": 1,
+      "desc": "전투 편성 중 흑수-묘 인격 1명 이상"
+    }
+  ],
+  "침잠": [
+    {
+      "id": "GGM_2_001",
+      "name": "장엄",
+      "img": "",
+      "grade": 2,
+      "cats": ["침잠"],
+      "type": "position",
+      "targetSlot": [0,1,2],
+      "desc": "0,1,2번 슬롯에 인격 배치"
+    },
+    {
+      "id": "GGM_2_002",
+      "name": "뒤엉킨 뼛조각",
+      "img": "",
+      "grade": 2,
+      "cats": ["침잠"],
+      "type": "active_kw",
+      "kw": "침잠",
+      "min": 5,
+      "desc": "전투 편성 중 침잠 인격 5명 이상"
+    },
+    {
+      "id": "GGM_2_003",
+      "name": "귀신 들린 신발",
+      "img": "",
+      "grade": 2,
+      "cats": ["침잠"],
+      "type": "position",
+      "targetSlot": 1,
+      "desc": "1번 슬롯에 인격 배치"
+    },
+    {
+      "id": "GGM_3_001",
+      "name": "서지 글로브",
+      "img": "",
+      "grade": 3,
+      "cats": ["침잠"],
+      "type": "active_kw",
+      "kw": "침잠",
+      "min": 5,
+      "desc": "전투 편성 중 침잠 인격 5명 이상"
+    },
+    {
+      "id": "GGM_3_002",
+      "name": "누군가의 단말기",
+      "img": "",
+      "grade": 3,
+      "cats": ["침잠"],
+      "type": "active_faction",
+      "faction": "검지",
+      "min": 1,
+      "desc": "전투 편성 중 검지 소속 인격 1명 이상"
+    },
+    {
+      "id": "GGM_4_001",
+      "name": "검은 악보",
+      "img": "",
+      "grade": 4,
+      "cats": ["침잠"],
+      "replaces": ["GGM_2_002"],
+      "type": "active_kw",
+      "kw": "침잠",
+      "min": 5,
+      "desc": "전투 편성 중 침잠 인격 5명 이상"
+    },
+    {
+      "id": "GGM_4_002",
+      "name": "덮칠 파도",
+      "img": "",
+      "grade": 4,
+      "cats": ["침잠"],
+      "replaces": ["GGM_3_001"],
+      "type": "active_kw",
+      "kw": "침잠",
+      "min": 5,
+      "desc": "전투 편성 중 침잠 인격 5명 이상"
+    },
+    {
+      "id": "GGM_4_003",
+      "name": "먹장구름",
+      "img": "",
+      "grade": 4,
+      "cats": ["침잠"],
+      "type": "total_kw",
+      "kw": "침잠",
+      "min": 10,
+      "desc": "전투 편성 중 침잠 인격 10명 이상"
+    },
+    {
+      "id": "GGM_4_004",
+      "name": "남겨진 신탁",
+      "img": "",
+      "grade": 4,
+      "cats": ["침잠"],
+      "type": "active_faction",
+      "faction": "검지",
+      "min": 1,
+      "desc": "전투 편성 중 검지 소속 인격 1명 이상"
+    }
+  ],
+  "호흡": [
+    {
+      "id": "GPR_2_001",
+      "name": "낡은 목각 인형",
+      "img": "",
+      "grade": 2,
+      "cats": ["호흡"],
+      "type": "position",
+      "targetSlot": [0,1,2],
+      "desc": "0,1,2번 슬롯에 인격 배치"
+    },
+    {
+      "id": "GPR_2_002",
+      "name": "작살 의족",
+      "img": "",
+      "grade": 2,
+      "cats": ["호흡"],
+      "type": "active_faction",
+      "faction": "피쿼드호",
+      "min": 1,
+      "desc": "전투 편성 중 피쿼드호 소속 인격 1명 이상"
+    },
+    {
+      "id": "GPR_3_001",
+      "name": "미련",
+      "img": "",
+      "grade": 3,
+      "cats": ["호흡"],
+      "type": "position",
+      "targetSlot": [0,1],
+      "desc": "0,1번 슬롯에 인격 배치"
+    },{
+      "id": "GPR_3_002",
+      "name": "추억",
+      "img": "",
+      "grade": 3,
+      "cats": ["호흡"],
+      "type": "active_kw",
+      "kw": "호흡",
+      "min": 5,
+      "desc": "전투 편성 중 호흡 인격 5명 이상"
+    },
+    {
+      "id": "GPR_3_003",
+      "name": "부서진 칼날",
+      "img": "",
+      "grade": 3,
+      "cats": ["호흡"],
+      "type": "active_faction",
+      "faction": "검계",
+      "min": 1,
+      "desc": "전투 편성 중 검계 소속 인격 1명 이상"
+    },
+    {
+      "id": "GPR_3_004",
+      "name": "물 속의 달",
+      "img": "",
+      "grade": 3,
+      "cats": ["호흡"],
+      "type": "total_kw_multi",
+      "kws": ["호흡", "파열"],
+      "min": 12,
+      "desc": "전투 편성 중 호흡 또는 파열 키워드 보유 인격 12명 이상"
+    },
+    {
+      "id": "GPR_4_001",
+      "name": "복주머니",
+      "img": "",
+      "grade": 4,
+      "cats": ["호흡"],
+      "replaces" : ["GPR_3_002"],
+      "type": "active_kw",
+      "kw": "호흡",
+      "min": 5,
+      "desc": "전투 편성 중 호흡 인격 5명 이상 (추억과 중복 불가)"
+    },
+    {
+      "id": "GPR_4_002",
+      "name": "캐스크 스피리츠",
+      "img": "",
+      "grade": 4,
+      "cats": ["호흡"],
+      "replaces" : ["GPR_3_002"],
+      "type": "active_kw",
+      "kw": "호흡",
+      "min": 5,
+      "desc": "전투 편성 중 호흡 인격 5명 이상"
+    },
+    {
+      "id": "GPR_4_003",
+      "name": "모든 악의 끝",
+      "img": "",
+      "grade": 4,
+      "cats": ["호흡"],
+      "type": "total_faction",
+      "faction": "피쿼드호",
+      "min": 3,
+      "desc": "전투 편성 중 피쿼드호 소속 인격 3명 이상"
+    },
+    {
+      "id": "GPR_4_004",
+      "name": "앞을 비추는 가스등",
+      "img": "",
+      "grade": 4,
+      "cats": ["호흡"],
+      "replaces":["GPR_2_002"],
+      "type": "active_faction",
+      "faction": "피쿼드호",
+      "min": 1,
+      "desc": "전투 편성 중 피쿼드호 소속 인격 1명 이상 (작살 의족과 중복 불가)"
+    },
+    {
+      "id": "GPR_4_005",
+      "name": "해진 삿갓",
+      "img": "",
+      "grade": 4,
+      "cats": ["호흡"],
+      "type": "active_faction",
+      "faction": "검계",
+      "min": 3,
+      "desc": "전투 편성 중 검계 소속 인격 3명 이상"
+    },
+    {
+      "id": "GPR_4_006",
+      "name": "애달픈 날숨",
+      "img": "",
+      "grade": 4,
+      "cats": ["호흡"],
+      "type": "position",
+      "targetSlot": 4,
+      "extras": [
+        { "type": "active_kw_count", "kw": "호흡", "min": 5 }
+      ],
+      "desc": "4번 슬롯에 인격 배치. 호흡 키워드 보유 인격 5명 이상 시 금색 표시"
+    }
+  ],
+  "충전": [
+    {
+      "id": "GEN_2_001",
+      "name": "순찰용 손전등",
+      "img": "",
+      "grade": 2,
+      "cats": ["충전"],
+      "type": "position",
+      "targetSlot": [0,1,2],
+      "desc": "0,1,2번 슬롯에 인격 배치"
+    },
+    {
+      "id": "GEN_2_002",
+      "name": "1B 타입 팔각 볼트",
+      "img": "",
+      "grade": 2,
+      "cats": ["충전"],
+      "type": "active_kw",
+      "kw": "충전",
+      "min": 5,
+      "desc": "전투 편성 중 충전 인격 5명 이상"
+    },
+    {
+      "id": "GEN_2_003",
+      "name": "심장 리액트 모듈",
+      "img": "",
+      "grade": 2,
+      "cats": ["충전"],
+      "type": "active_faction",
+      "faction": "멀티크랙 사무소",
+      "min": 1,
+      "desc": "전투 편성 중 멀티크랙 사무소 소속 인격 1명 이상"
+    },
+    {
+      "id": "GEN_2_004",
+      "name": "의체관절 서보모터",
+      "img": "",
+      "grade": 2,
+      "cats": ["충전"],
+      "type": "active_faction",
+      "faction": "멀티크랙 사무소",
+      "min": 1,
+      "desc": "전투 편성 중 멀티크랙 사무소 소속 인격 1명 이상"
+    },
+    {
+      "id": "GEN_2_005",
+      "name": "전격부",
+      "img": "",
+      "grade": 2,
+      "cats": ["충전"],
+      "type": "global_kw_count",
+      "kws": ["충전", "파열"],
+      "min": 6,
+      "extras": [
+        { "type": "global_kw_count", "kws":["충전", "파열"], "min": 8 }
+      ],
+      "desc": "전투 전체 충전 또는 파열 키워드 6회 이상, 전투 전체 충전 또는 파열 키워드 8회 이상"
+    },
+    {
+      "id": "GEN_3_001",
+      "name": "모조발전기",
+      "img": "",
+      "grade": 3,
+      "cats": ["충전"],
+      "type": "position",
+      "targetSlot": [0,1],
+      "desc": "0,1번 슬롯에 인격 배치"
+    },
+    {
+      "id": "GEN_3_002",
+      "name": "인슐레이터",
+      "img": "",
+      "grade": 3,
+      "cats": ["충전"],
+      "type": "active_kw",
+      "kw": "충전",
+      "min": 5,
+      "desc": "전투 편성 중 충전 인격 5명 이상"
+    },
+    {
+      "id": "GEN_3_003",
+      "name": "E식 차원 단검",
+      "img": "",
+      "grade": 3,
+      "cats": ["충전"],
+      "type": "active_faction",
+      "faction": "W사",
+      "min": 1,
+      "desc": "전투 편성 중 W사 소속 인격 1명 이상"
+    },{
+      "id": "GEN_3_004",
+      "name": "휴대용 역장 배터리",
+      "img": "",
+      "grade": 3,
+      "cats": ["충전"],
+      "type": "active_faction",
+      "faction": "W사",
+      "min": 1,
+      "desc": "전투 편성 중 W사 소속 인격 1명 이상"
+    },
+    {
+      "id": "GEN_4_001",
+      "name": "제 1종 영구기관",
+      "img": "",
+      "grade": 4,
+      "cats": ["충전"],
+      "replaces": ["GEN_2_002"],
+      "type": "active_kw",
+      "kw": "충전",
+      "min": 5,
+      "desc": "전투 편성 중 충전 인격 5명 이상 (1B 타입 팔각 볼트와 중복 불가)"
+    },
+    {
+      "id": "GEN_4_002",
+      "name": "제 5종 영구기관",
+      "img": "",
+      "grade": 4,
+      "cats": ["충전"],
+      "replaces": ["GEN_3_002"],
+      "type": "active_kw",
+      "kw": "충전",
+      "min": 5,
+      "desc": "전투 편성 중 충전 인격 5명 이상 (인슐레이터와 중복 불가)"
+    },
+    {
+      "id": "GEN_4_003",
+      "name": "자율 작동식 관절",
+      "img": "",
+      "grade": 4,
+      "cats": ["충전"],
+      "consumes": ["배터리", "모터"],
+      "replaces":["GEN_2_004"],
+      "type": "active_kw",
+      "kw": "충전",
+      "min": 5,
+      "extras": [
+        { "type": "faction", "val": "멀티크랙 사무소" }
+      ],
+      "desc": "전투 편성 중 충전 인격 5명 이상. 멀티크랙 사무소 소속은 금색 표시."
+    },
+    {
+      "id": "GEN_4_004",
+      "name": "과충전된 배터리",
+      "img": "",
+      "grade": 4,
+      "cats": ["충전"],
+      "consumes": ["배터리", "혈액"],
+      "type": "active_kw",
+      "kw": "충전",
+      "min": 5,
+      "desc": "전투 편성 중 충전 인격 5명 이상"
+    },
+    {
+      "id": "GEN_4_005",
+      "name": "영구동력 서보모터",
+      "img": "",
+      "grade": 4,
+      "cats": ["충전"],
+      "consumes": ["심장", "모터"],
+      "replaces":["GEN_2_004", "GEN_2_003"],
+      "type": "active_kw",
+      "kw": "충전",
+      "min": 5,
+      "desc": "전투 편성 중 충전 인격 5명 이상."
+    },
+    {
+      "id": "GEN_4_006",
+      "name": "하츠 파워드 쥬얼",
+      "img": "",
+      "grade": 4,
+      "cats": ["충전"],
+      "consumes": ["심장", "혈액"],
+      "type": "active_kw",
+      "kw": "충전",
+      "min": 5,
+      "desc": "전투 편성 중 충전 인격 5명 이상"
+    },
+    {
+      "id": "GEN_4_007",
+      "name": "C형 정리 요원 장비 세트",
+      "img": "",
+      "grade": 4,
+      "cats": ["충전"],
+      "replaces": ["GEN_3_003", "GEN_3_004"],
+      "type": "active_faction",
+      "faction": "W사",
+      "min": 1,
+      "desc": "전투 편성 중 W사 소속 인격 1명 이상"
+    }
+  ],
+  "참격": [
+    {
+      "id": "GAS_1_001",
+      "name": "수술용 메스",
+      "img": "",
+      "grade": 1,
+      "cats": ["참격"],
+      "type": "position",
+      "targetSlot": [3,4],
+      "extras": [
+      { "type": "sk_type", "atk": "참격", "min": 1 }
+      ],
+      "desc": "3,4번 슬롯에 인격 배치. 참격 공격 기술 보유 인격은 금색 표시" 
+     },
+     {
+      "id": "GAS_1_002",
+      "name": "위장된 화평",
+      "img": "",
+      "grade": 1,
+      "cats": ["참격"],
+      "type": "position",
+      "targetSlot": [4,5],
+      "desc": "4,5번 슬롯에 인격 배치."
+     },
+     {
+      "id": "GAS_1_003",
+      "name": "닳고 닳은 숫돌",
+      "img": "",
+      "grade": 1,
+      "cats": ["참격"],
+      "type": "position",
+      "targetSlot": 2,
+      "extras": [
+      { "type": "sk_type", "atk": "참격", "min": 3 }
+      ],
+      "desc": "2번 슬롯에 인격 배치. 참격 공격 기술 3개 보유 인격은 금색 표시"
+     },
+     {
+      "id": "GAS_2_001",
+      "name": "재단용 가위",
+      "img": "",
+      "grade": 2,
+      "cats": ["참격"],
+      "type": "position",
+      "targetSlot": [3,5],
+      "desc": "3,5번 슬롯에 인격 배치."
+     },
+     {
+      "id": "GAS_2_002",
+      "name": "결의",
+      "img": "",
+      "grade": 2,
+      "cats": ["참격"],
+      "type": "sk_type",
+      "atk": "참격",
+      "min": 2,
+      "extras": [
+      { "type": "faction", "val": "시 협회" }
+      ],
+      "desc": "전투 편성 중 참격 공격 기술 2개 이상. 시 협회 소속 인격이 있을 경우 금색 표시"
+     },
+     {
+      "id": "GAS_2_003",
+      "name": "짧은 케인 소드",
+      "img": "",
+      "grade": 2,
+      "cats": ["참격"],
+      "type": "active_faction",
+      "faction": "세븐 협회",
+      "min": 1,
+      "desc": "전투 편성 중 세븐 협회 소속 인격 1명 이상"
+     },
+     {
+      "id": "GAS_3_001",
+      "name": "선고의 순간",
+      "img": "",
+      "grade": 3,
+      "cats": ["참격"],
+      "type": "position",
+      "targetSlot": [2,3,4,5],
+      "desc": "2,3,4,5번 슬롯에 인격 배치"
+     },
+     {
+      "id": "GAS_3_002",
+      "name": "구름무늬 호리병",
+      "img": "",
+      "grade": 3,
+      "cats": ["참격"],
+      "type": "active_faction",
+      "faction": "흑운회",
+      "min": 1,
+      "desc": "전투 편성 중 흑운회 소속 인격 1명 이상"
+     },
+     {
+      "id": "GAS_3_003",
+      "name": "녹슨 칼자루",
+      "img": "",
+      "grade": 3,
+      "cats": ["참격"],
+      "type": "faction_list",
+      "factions": ["검계", "흑운회"],
+      "desc": "전투 편성 중 검계 또는 흑운회 소속 인격 1명 이상"
+     },
+     {
+      "id": "GAS_3_004",
+      "name": "낡은 칼자루",
+      "img": "",
+      "grade": 3,
+      "cats": ["참격"],
+      "type": "faction_list",
+      "factions": ["검계", "흑운회"],
+      "desc": "전투 편성 중 검계 또는 흑운회 소속 인격 1명 이상"
+     },
+     {
+      "id": "GAS_3_005",
+      "name": "그림자 삿갓",
+      "img": "",
+      "grade": 3,
+      "cats": ["참격"],
+      "type": "active_faction",
+      "faction": "흑수-묘",
+      "min": 1,
+      "desc": "전투 편성 중 흑수-묘 인격 1명 이상"
+     },
+     {
+      "id": "GAS_3_006",
+      "name": "마음을 닫는 붉은 천",
+      "img": "",
+      "grade": 3,
+      "cats": ["참격"],
+      "type": "position",
+      "targetSlot": 0,
+      "extras": [
+        { "type": "faction", "val": "군주" }
+      ],
+      "desc": "0번 슬롯에 인격 배치. 군주 소속 인격이 있을 경우 금색 표시"
+     },
+     {
+      "id": "GAS_4_001",
+      "name": "잘려나간 기억",
+      "img": "",
+      "grade": 4,
+      "cats": ["참격"],
+      "type": "position",
+      "targetSlot": [0,1],
+      "desc": "0,1번 슬롯에 인격 배치"
+     },
+     {
+      "id": "GAS_4_002",
+      "name": "깨어진 대검",
+      "img": "",
+      "grade": 4,
+      "cats": ["참격"],
+      "type": "active_faction",
+      "faction": "츠바이 협회",
+      "min": 1,
+      "desc": "전투 편성 중 츠바이 협회 소속 인격 1명 이상"
+     },
+     {
+      "id": "GAS_4_003",
+      "name": "장관",
+      "img": "",
+      "grade": 4,
+      "cats": ["참격"],
+      "replaces": ["GLU_3_003", "GAS_3_003"],
+      "type": "active_faction",
+      "faction": "흑운회",
+      "min": 3,
+      "desc": "전투 편성 중 흑운회 소속 인격 3명 이상 (조각난 칼날 또는 녹슨 칼자루와 중복 불가)"
+     },
+     {
+      "id": "GAS_4_004",
+      "name": "부동",
+      "img": "",
+      "grade": 4,
+      "cats": ["참격"],
+      "replaces": ["GPR_3_003", "GAS_3_003"],
+      "type": "active_faction",
+      "faction": "검계",
+      "min": 3,
+      "desc": "전투 편성 중 검계 소속 인격 3명 이상 (부서진 칼날 또는 녹슨 칼자루와 중복 불가)"
+     },
+     {
+      "id": "GAS_4_005",
+      "name": "낡은 도포",
+      "img": "",
+      "grade": 4,
+      "cats": ["참격"],
+      "type": "active_faction",
+      "faction": "검계",
+      "min": 3,
+      "desc": "전투 편성 중 검계 소속 인격 3명 이상"
+     },
+     {
+      "id": "GAS_4_006",
+      "name": "탁마",
+      "img": "",
+      "grade": 4,
+      "cats": ["참격"],
+      "replaces": ["GPR_3_003", "GAS_3_004"],
+      "type": "active_faction",
+      "faction": "검계",
+      "min": 3,
+      "desc": "전투 편성 중 검계 소속 인격 3명 이상 (부서진 칼날 또는 낡은 칼자루와 중복 불가)"
+     },
+     {
+      "id": "GAS_4_007",
+      "name": "떼구름",
+      "img": "",
+      "grade": 4,
+      "cats": ["참격"],
+      "type": "active_faction",
+      "faction": "흑운회",
+      "min": 3,
+      "desc": "전투 편성 중 흑운회 소속 인격 3명 이상"
+     }
+  ],
+  "관통": [
+    {
+      "id": "GAP_1_001",
+      "name": "목공용 대못",
+      "img": "",
+      "grade": 1,
+      "cats": ["관통"],
+      "type": "position",
+      "targetSlot": [3,4],
+      "extras": [
+      { "type": "sk_type", "atk": "관통", "min": 2 }
+      ],
+      "desc": "3,4번 슬롯에 인격 배치. 관통 공격 기술 2개 이상 보유 인격은 금색 표시"
+     },
+     {
+      "id": "GAP_1_002",
+      "name": "고탄성강 신발",
+      "img": "",
+      "grade": 1,
+      "cats": ["관통"],
+      "type": "position",
+      "targetSlot": 2,
+      "extras": [
+      { "type": "sk_type", "atk": "관통", "min": 3 }
+      ],
+      "desc": "2번 슬롯에 인격 배치. 관통 공격 기술 3개 이상 보유 인격은 금색 표시"
+     },
+     {
+      "id": "GAP_2_001",
+      "name": "축복이었던",
+      "img": "",
+      "grade": 2,
+      "cats": ["관통"],
+      "type": "position",
+      "targetSlot": [4, 5],
+      "desc": "4,5번 슬롯에 인격 배치"
+     },
+    {
+      "id": "GAP_2_002",
+      "name": "증명의 깃털",
+      "img": "",
+      "grade": 2,
+      "cats": ["관통"],
+      "type": "active_faction",
+      "faction": "섕크 협회",
+      "min": 1,
+      "desc": "전투 편성 중 섕크 협회 소속 인격 1명 이상"
+     },
+     {
+      "id": "GAP_3_001",
+      "name": "벼려진 가지",
+      "img": "",
+      "grade": 3,
+      "cats": ["관통"],
+      "type": "position",
+      "targetSlot": [2, 3, 4, 5],
+      "desc": "2,3,4,5번 슬롯에 인격 배치"
+     },
+     {
+      "id": "GAP_3_002",
+      "name": "튿어진 소매",
+      "img": "",
+      "grade": 3,
+      "cats": ["관통"],
+      "type": "active_faction",
+      "faction": "기술해방연합",
+      "min": 1,
+      "desc": "전투 편성 중 기술해방연합 소속 인격 1명 이상"
+     },
+     {
+      "id": "GAP_3_003",
+      "name": "벼려진 가지",
+      "img": "",
+      "grade": 3,
+      "cats": ["관통"],
+      "type": "position",
+      "targetSlot": 0,
+      "desc": "0번 슬롯에 인격 배치"
+     },
+     {
+      "id": "GAP_4_001",
+      "name": "구멍난 기억",
+      "img": "",
+      "grade": 4,
+      "cats": ["관통"],
+      "type": "position",
+      "targetSlot": [0,1],
+      "desc": "0,1번 슬롯에 인격 배치"
+     },
+     {
+      "id": "GAP_4_002",
+      "name": "듀엘교본 3권",
+      "img": "",
+      "grade": 4,
+      "cats": ["관통"],
+      "type": "active_faction",
+      "faction": "섕크 협회",
+      "min": 1,
+      "desc": "전투 편성 중 섕크 협회 소속 인격 1명 이상"
+     },
+     {
+      "id": "GAP_4_003",
+      "name": "데스페라도",
+      "img": "",
+      "grade": 4,
+      "cats": ["관통"],
+      "type": "total_kw",
+      "kw": "탄환",
+      "min": 2,
+      "extras": [
+        { "type": "total_kw", "kw": "탄환", "min": 5 },
+        { "type": "total_kw", "kw": "탄환", "min": 8 }
+      ],
+      "desc": "전투 편성 중 탄환 키워드 보유 인격 2명 이상, 전투 편성 중 탄환 키워드 보유 인격 5명 이상, 전투 편성 중 탄환 키워드 보유 인격 8명 이상"
+     }
+  ],
+  "타격": [
+    {
+      "id": "GAB_1_001",
+      "name": "동티",
+      "img": "",
+      "grade": 1,
+      "cats": ["타격"],
+      "type": "position",
+      "targetSlot": [3,5],
+      "desc": "3,5번 슬롯에 인격 배치"
+     },
+     {
+      "id": "GAB_1_002",
+      "name": "차원분리수거함",
+      "img": "",
+      "grade": 1,
+      "cats": ["타격"],
+      "type": "position",
+      "targetSlot": 2,
+      "extras": [
+      { "type": "sk_type", "atk": "타격", "min": 3 }
+      ],
+      "desc": "2번 슬롯에 인격 배치. 타격 공격 기술 3개 이상 보유 인격은 금색 표시"
+     },
+     {
+      "id": "GAB_1_003",
+      "name": "연육 망치",
+      "img": "",
+      "grade": 1,
+      "cats": ["타격"],
+      "type": "position",
+      "targetSlot": [3,4],
+      "extras": [
+      { "type": "sk_type", "atk": "타격", "min": 2 }
+      ],
+      "desc": "3,4번 슬롯에 인격 배치. 타격 공격 기술 2개 이상 보유 인격은 금색 표시"
+     },
+     {
+      "id": "GAB_2_001",
+      "name": "축복이었던",
+      "img": "",
+      "grade": 2,
+      "cats": ["타격"],
+      "type": "position",
+      "targetSlot": [4, 5],
+      "desc": "4,5번 슬롯에 인격 배치"
+     },
+     {
+      "id": "GAB_2_002",
+      "name": "포켓 암기 노트",
+      "img": "",
+      "grade": 2,
+      "cats": ["타격"],
+      "type": "active_faction",
+      "faction": "디에치 협회",
+      "min": 1,
+      "desc": "전투 편성 중 디에치 협회 소속 인격 1명 이상"
+     },
+     {
+      "id": "GAB_2_003",
+      "name": "강화 문신 - 중지",
+      "img": "",
+      "grade": 2,
+      "cats": ["타격"],
+      "type": "active_faction",
+      "faction": "중지",
+      "min": 1,
+      "desc": "전투 편성 중 중지 소속 인격 1명 이상"
+     },
+     {
+      "id": "GAB_3_001",
+      "name": "굳게 쥔 상",
+      "img": "",
+      "grade": 3,
+      "cats": ["타격"],
+      "type": "position",
+      "targetSlot": [2, 3, 4, 5],
+      "desc": "2,3,4,5번 슬롯에 인격 배치"
+      },
+      {
+      "id": "GAB_3_002",
+      "name": "차원지각변환체",
+      "img": "",
+      "grade": 3,
+      "cats": ["타격"],
+      "type": "active_kw",
+      "kw": "버림",
+      "min": 1,
+      "desc": "전투 편성 중 버림 키워드 보유 인격 1명 이상"
+      },
+      {
+      "id": "GAB_3_003",
+      "name": "도둑맞은 해결사 잡지",
+      "img": "",
+      "grade": 2,
+      "cats": ["타격"],
+      "type": "active_faction",
+      "faction": "중지",
+      "min": 4,
+      "desc": "전투 편성 중 중지 소속 인격 4명 이상"
+     },
+     {
+      "id": "GAB_3_004",
+      "name": "의리 사슬",
+      "img": "",
+      "grade": 2,
+      "cats": ["타격"],
+      "type": "active_faction",
+      "faction": "중지",
+      "min": 1,
+      "desc": "전투 편성 중 중지 소속 인격 1명 이상"
+     },
+     {
+      "id": "GAB_4_001",
+      "name": "바스라진 기억",
+      "img": "",
+      "grade": 4,
+      "cats": ["타격"],
+      "type": "position",
+      "targetSlot": [0,1],
+      "desc": "0,1번 슬롯에 인격 배치"
+     },
+     {
+      "id": "GAB_4_002",
+      "name": "듀엘교본 3권",
+      "img": "",
+      "grade": 4,
+      "cats": ["타격"],
+      "type": "active_faction",
+      "faction": "중지",
+      "min": 1,
+      "desc": "전투 편성 중 중지 소속 인격 1명 이상"
+     },
+     {
+      "id": "GAB_4_003",
+      "name": "영속하는 인연 사슬",
+      "img": "",
+      "grade": 4,
+      "cats": ["타격"],
+      "replaces": ["GAB_2_003", "GAB_3_004"],
+      "type": "active_faction",
+      "faction": "중지",
+      "min": 2,
+      "desc": "전투 편성 중 중지 소속 인격 2명 이상 (강화 문신 - 중지 또는 의리 사슬과 중복 불가)"
+     },
+     {
+      "id": "GAB_4_004",
+      "name": "중지의 규율",
+      "img": "",
+      "grade": 4,
+      "cats": ["타격"],
+      "type": "active_faction",
+      "faction": "중지",
+      "min": 3,
+      "desc": "전투 편성 중 중지 소속 인격 3명 이상"
+     },
+     {
+      "id": "GAB_4_005",
+      "name": "앙갚음 장부 : 번외",
+      "img": "",
+      "grade": 4,
+      "cats": ["타격"],
+      "type": "active_faction",
+      "faction": "중지",
+      "min": 1,
+      "desc": "전투 편성 중 중지 소속 인격 1명 이상"
+     },
+     {
+      "id": "GAB_4_006",
+      "name": "작. 형. 등장",
+      "img": "",
+      "grade": 4,
+      "cats": ["타격"],
+      "replaces": ["GLU_3_002"],
+      "type": "active_faction",
+      "faction": "중지",
+      "min": 3,
+      "extras": [
+        { "type": "active_faction", "faction": "중지", "min": 5 }
+      ],
+      "desc": "전투 편성 중 중지 소속 인격 3명 이상 (혈향도래와 중복 불가). 전투 편성 중 중지 소속 인격 5명 이상 시 금색 표시"
+     }
+  ],
+  "기타": [
+    {
+      "id": "AGN_2_001",
+      "name": "마을을 지킬 작살",
+      "img": "",
+      "grade": 2,
+      "cats": ["기타"],
+      "type": "position",
+      "targetSlot": 5,
+      "desc": "5번 슬롯에 인격 배치"
+     },
+     {
+      "id": "AGN_2_002",
+      "name": "검은 장부",
+      "img": "",
+      "grade": 2,
+      "cats": ["기타"],
+      "type": "faction_list",
+      "factions": ["검계", "흑운회"],
+      "min": 4,
+      "desc": "전투 편성 중 검계 또는 흑운회 소속 인격 4명 이상"
+     },
+     {
+      "id": "AGN_2_003",
+      "name": "경멸의 시선의 경멸",
+      "img": "",
+      "grade": 2,
+      "cats": ["기타"],
+      "type": "position",
+      "targetSlot": [0,5],
+      "desc": "0,5번 슬롯에 인격 배치"
+     },
+     {
+      "id": "AGN_2_004",
+      "name": "불 꺼진 촛대",
+      "img": "",
+      "grade": 2,
+      "cats": ["기타"],
+      "type": "position",
+      "targetSlot": 0,
+      "desc": "0번 슬롯에 인격 배치"
+     },
+     {
+      "id": "AGN_2_005",
+      "name": "긴급 부여형 수사관 배지",
+      "img": "",
+      "grade": 2,
+      "cats": ["기타"],
+      "type": "position",
+      "targetSlot": [0,1,2],
+      "desc": "0,1,2번 슬롯에 인격 배치"
+     },
+     {
+      "id": "AGN_2_006",
+      "name": "소홍주",
+      "img": "",
+      "grade": 2,
+      "cats": ["기타"],
+      "type": "position",
+      "targetSlot": [1,3,5],
+      "desc": "1,3,5번 슬롯에 인격 배치"
+     },
+     {
+      "id": "AGN_3_001",
+      "name": "아직 따뜻한 커피",
+      "img": "",
+      "grade": 3,
+      "cats": ["기타"],
+      "type": "position",
+      "targetSlot": 0,
+      "desc": "0번 슬롯에 인격 배치"
+     },
+     {
+      "id": "AGN_3_002",
+      "name": "부서진 바이올린",
+      "img": "",
+      "grade": 3,
+      "cats": ["기타"],
+      "type": "position",
+      "targetSlot": [4,5],
+      "desc": "4,5번 슬롯에 인격 배치"
+     },
+     {
+      "id": "AGN_3_003",
+      "name": "통상 작전용 장비",
+      "img": "",
+      "grade": 3,
+      "cats": ["기타"],
+      "type": "active_faction",
+      "faction": "림버스 컴퍼니",
+      "min": 1,
+      "extras": [
+        { "type": "active_faction", "faction": "림버스 컴퍼니", "min": 4 }
+      ],
+      "desc": "전투 편성 중 림버스 컴퍼니 소속 인격 1명 이상. 전투 편성 중 림버스 컴퍼니 소속 인격 4명 이상 시 금색 표시"
+     },
+     {
+      "id": "AGN_3_004",
+      "name": "찰랑이는 연료통",
+      "img": "",
+      "grade": 3,
+      "cats": ["기타"],
+      "type": "position",
+      "targetSlot": [1,3],
+      "desc": "1,3번 슬롯에 인격 배치"
+     },
+     {
+      "id": "AGN_3_005",
+      "name": "잿빛 별자리의 가호",
+      "img": "",
+      "grade": 3,
+      "cats": ["기타"],
+      "type": "position",
+      "targetSlot": 0,
+      "desc": "0번 슬롯에 인격 배치"
+     },
+     {
+      "id": "AGN_3_006",
+      "name": "붉게 얽힌 거미집",
+      "img": "",
+      "grade": 3,
+      "cats": ["기타"],
+      "type": "position",
+      "targetSlot": 0,
+      "extras": [
+        { "type": "faction", "val": "천살성" }
+      ],
+      "desc": "0번 슬롯에 인격 배치. 천살성 소속 인격이 있을 경우 금색 표시"
+     },
+     {
+      "id": "AGN_4_001",
+      "name": "누군가 놓쳐버린 사원증",
+      "img": "",
+      "grade": 4,
+      "cats": ["기타"],
+      "type": "active_faction",
+      "faction": "림버스 컴퍼니",
+      "min": 1,
+      "extras": [
+        { "type": "faction", "val": "LCE"}
+      ],
+      "desc": "전투 편성 중 림버스 컴퍼니 소속 인격 1명 이상. LCE 소속 인격이 있을 경우 금색 표시"
+     },
+     {
+      "id": "AGN_4_002",
+      "name": "조그맣고 근사한 바이올린",
+      "img": "",
+      "grade": 4,
+      "cats": ["기타"],
+      "replaces": ["AGN_3_002"],
+      "type": "position",
+      "targetSlot": [4,5],
+      "desc": "4,5번 슬롯에 인격 배치"
+     },
+     {
+      "id": "AGN_4_003",
+      "name": "고위험 작전용 장비",
+      "img": "",
+      "grade": 4,
+      "cats": ["기타"],
+      "replaces": ["AGN_3_003"],
+      "type": "active_faction",
+      "faction": "림버스 컴퍼니",
+      "min": 1,
+      "desc": "전투 편성 중 림버스 컴퍼니 소속 인격 1명 이상. LCE 소속 인격이 있을 경우 금색 표시"
+     },
+     {
+      "id": "AGN_4_004",
+      "name": "보급형 K사 앰플",
+      "img": "",
+      "grade": 4,
+      "cats": ["기타"],
+      "replaces": ["AGN_3_002"],
+      "type": "position",
+      "targetSlot": 0,
+      "desc": "0번 슬롯에 인격 배치"
+     }
+  ]
+}
