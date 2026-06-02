@@ -36,19 +36,35 @@
             #right-sidebar.active { right: 0 !important; }
             .sidebar-inner { width: 280px; }
         }
-
+        
         /* [사이드바 일체형 핸들] */
         .sidebar-handle { position: absolute; top: 10px; width: 30px; height: 45px; background: #1a1a1a; border: 1px solid #333; display: flex; align-items: center; justify-content: center; cursor: pointer; color: white; z-index: 1001; }
         #left-sidebar .sidebar-handle { right: -30px; border-left: none; border-radius: 0 5px 5px 0; }
         #right-sidebar .sidebar-handle { left: -30px; border-right: none; border-radius: 5px 0 0 5px; }
 
         /* [중앙 헤더 배치 가이드] */
-        header { padding-left: 50px !important; padding-right: 50px !important; }
+        header { padding-left: 40px !important; padding-right: 40px !important; }
         .header-center { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; flex: 1; }
         .header-left { display: flex; align-items: center; gap: 8px; width: 280px; }
         .reset-group { display: flex; align-items: center; gap: 1px; background: #1a1a1a; padding: 2px; border-radius: 6px; border: 1px solid #333; }
         .reset-group button { padding: 4px 10px; font-size: 10px; color: #888; transition: all 0.2s; }
         .reset-group button:hover { color: var(--limbus-red); background: #222; }
+        @media (min-width: 1024px) {
+            header { padding-left: 60px !important; padding-right: 60px !important;}
+        }
+        @media (max-width: 1023px) {
+            header {
+                flex-direction: column !important;
+                height: auto !important;
+                padding-top: 15px !important;
+                padding-bottom: 15px !important;
+                overflow-y: visible !important;
+            }
+            #active-slot-name-display {
+                font-size: 18px !important;
+                min-width: auto !important;
+            }
+        }
 
         /* 기프트 활성화 상태 */
         .active-slot { border-left: 4px solid var(--limbus-red); background: #2d1010; color: white; }
@@ -95,42 +111,41 @@
 
     <!-- [중앙 메인 영역] -->
     <main class="flex-1 flex flex-col overflow-hidden relative">
-        <header class="p-4 border-b border-stone-900 bg-stone-950/80 flex items-center justify-between">
+        <header class="border-b border-stone-900 bg-stone-950/80 flex flex-col lg:flex-row items-center justify-between gap-4 p-4">
             <!-- 좌측: 코드 입출력 -->
-            <div class="header-left">
-                <div class="flex flex-col gap-1 w-full">
-                    <div class="flex gap-1">
-                        <input id="in-code" type="text" class="bg-black text-[9px] p-1.5 flex-1 rounded border border-stone-800 outline-none" placeholder="IMPORT">
-                        <button onclick="importCode(true)" class="bg-stone-800 px-2 py-1 rounded text-[9px]">추가</button>
-                    </div>
-                    <div class="flex gap-1">
-                        <input id="out-code" readonly type="text" class="bg-black text-[9px] p-1.5 flex-1 rounded border border-stone-800 outline-none" placeholder="EXPORT">
-                        <button onclick="copyExportCode()" class="bg-blue-900/50 text-blue-400 border border-blue-900/50 px-2 py-1 rounded text-[9px] hover:bg-blue-900">복사</button>
-                    </div>
+            <div class="flex flex-col gap-1 w-full lg:w-64 order-2 lg:order-1">
+                <div class="flex gap-1">
+                    <input id="in-code" type="text" class="bg-black text-[9px] p-1.5 flex-1 rounded border border-stone-800 outline-none" placeholder="IMPORT">
+                    <button onclick="importCode(true)" class="bg-stone-800 px-2 py-1 rounded text-[9px]">추가</button>
+                </div>
+                <div class="flex gap-1">
+                    <input id="out-code" readonly type="text" class="bg-black text-[9px] p-1.5 flex-1 rounded border border-stone-800 outline-none" placeholder="EXPORT">
+                    <button onclick="copyExportCode()" class="bg-blue-900/50 text-blue-400 border border-blue-900/50 px-2 py-1 rounded text-[9px] hover:bg-blue-900">복사</button>
                 </div>
             </div>
 
-            <!-- 중앙: 정보 및 리셋 -->
-            <div class="header-center">
-                <div class="flex items-center gap-6">
-                    <label class="relative inline-flex items-center cursor-pointer scale-110">
+            <div class="flex flex-col items-center gap-3 w-full lg:flex-1 order-1 lg:order-2">
+                <div class="flex items-center justify-center gap-4 w-full">
+                    <label class="relative inline-flex items-center cursor-pointer flex-shrink-0">
                         <input type="checkbox" id="deployment-toggle" onchange="updateDeployment(this.checked)" class="sr-only peer">
-                        <div class="w-16 h-6 bg-stone-800 rounded-full peer peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-red-600 after:rounded-full after:h-5 after:w-7 after:transition-all"></div>
-                        <div class="absolute w-full flex justify-around text-[8px] font-bold pointer-events-none px-2 text-stone-300"><span>6인</span><span>7인</span></div>
+                        <div class="w-14 h-5 bg-stone-800 rounded-full peer peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-red-600 after:rounded-full after:h-4 after:w-6 after:transition-all"></div>
+                        <div class="absolute w-full flex justify-around text-[7px] font-bold pointer-events-none px-2 text-stone-300"><span>6인</span><span>7인</span></div>
                     </label>
-                    <h1 id="active-slot-name-display" class="text-2xl font-black text-red-600 uppercase tracking-tighter"></h1>
+
+                    <h1 id="active-slot-name-display" class="text-xl lg:text-2xl font-black text-red-600 uppercase tracking-tighter border-b-2 border-red-900/30 px-2 text-center truncate"></h1>
                 </div>
-                <div class="reset-group">
-                    <button onclick="resetPart('party')">인격 리셋</button>
-                    <button onclick="resetPart('gifts')">기프트 리셋</button>
-                    <button onclick="resetPart('floors')">팩 리셋</button>
-                    <button onclick="resetPart('all')" class="text-red-600 font-bold">전체 초기화</button>
+
+                <div class="reset-group flex-wrap justify-center">
+                    <button onclick="resetPart('party')" class="whitespace-nowrap">인격 리셋</button>
+                    <button onclick="resetPart('gifts')" class="whitespace-nowrap">기프트 리셋</button>
+                    <button onclick="resetPart('floors')" class="whitespace-nowrap">팩 리셋</button>
+                    <button onclick="resetPart('all')" class="text-red-600 font-bold whitespace-nowrap">전체 초기화</button>
                 </div>
             </div>
 
             <!-- 우측: 통계 요약 -->
-            <div class="flex flex-col items-end gap-1 w-[280px]">
-                <div id="total-summary" class="flex flex-wrap gap-1 justify-end"></div>
+            <div class="w-full lg:w-72 order-3">
+                <div id="total-summary" class="flex flex-wrap gap-x-2 gap-y-1 justify-center lg:justify-end text-[10px] lg:text-[11px]"></div>
             </div>
         </header>
 
