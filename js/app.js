@@ -210,7 +210,7 @@ function renderGifts() {
             const div = document.createElement('div');
             const isChecked = selectedIds.includes(g.id), isRep = replacedIds.has(g.id), isBlock = g.consumes && !isChecked && g.consumes.some(r => usedRes.has(r)), isUnav = isRep || isBlock;
             div.className = `has-tooltip flex items-center p-1.5 mb-0.5 rounded bg-stone-900/40 hover:bg-stone-800 grade-${g.grade} ${isChecked ? 'bg-red-900/20' : ''} ${isUnav ? 'opacity-30 grayscale pointer-events-none' : ''}`;
-            div.innerHTML = `<label class="flex items-center gap-2 flex-1 ${isUnav?'cursor-not-allowed':'cursor-pointer'}"><input type="checkbox" onchange="toggleGift('${g.id}')" ${isChecked?'checked':''} ${isUnav?'disabled':''}><span>${g.img?`<img src="${g.img}" class="w-4 h-4 mr-1 inline">`:''}${g.name} <span class="text-[8px] opacity-30 ml-1">${roman[g.grade]||g.grade}</span></span></label><div class="tooltip"><b>[${g.name}]</b>${isRep?'[재료사용됨] ':''}${isBlock?'[자원선점] ':''}${g.desc||''}</div>`;
+            div.innerHTML = `<label class="flex items-center gap-2 flex-1 ${isUnav?'cursor-not-allowed':'cursor-pointer'}"><input type="checkbox" onchange="toggleGift('${g.id}')" ${isChecked?'checked':''} ${isUnav?'disabled':''}><span>${g.img?`<img src="${g.img}" class="w-4 h-4 mr-1 inline">`:''}${g.name} <span class="text-[8px] ml-1" style="color: #e4dc01;">${roman[g.grade]||g.grade}</span></span></label><div class="tooltip"><b>[${g.name}]</b>${isRep?'[재료사용됨] ':''}${isBlock?'[자원선점] ':''}${g.desc||''}</div>`;
             cont.appendChild(div);
         });
     });
