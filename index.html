@@ -2,8 +2,8 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>15F</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>15F Strategy Master</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -14,108 +14,123 @@
         .sin-탐식 { color: #b7ff4d; } .sin-우울 { color: #4dffdb; } .sin-오만 { color: #4da6ff; } .sin-질투 { color: #a64dff; }
         .atk-type { color: #fef08a; font-weight: bold; }
 
-        /* 사이드바 레이아웃 */
-        .sidebar { transition: width 0.3s ease; width: 260px; flex-shrink: 0; background: #111; position: relative; z-index: 20; }
-        .sidebar.collapsed { width: 0; border: none; overflow: hidden; }
-        .sidebar.collapsed > div { display: none; }
-        
-        .side-toggle { position: fixed; top: 50%; width: 20px; height: 60px; background: #222; border: 1px solid #444; cursor: pointer; z-index: 100; display: flex; align-items: center; justify-content: center; color: #888; }
-        #left-toggle { left: 0; border-radius: 0 5px 5px 0; }
-        #right-toggle { right: 0; border-radius: 5px 0 0 5px; }
+        /* [사이드바 레이아웃] */
+        .sidebar { transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1); background: #111; position: relative; height: 100vh; flex-shrink: 0; z-index: 1000; }
+        .sidebar-inner { width: 260px; height: 100%; display: flex; flex-direction: column; transition: opacity 0.2s; }
 
-        /* 기프트 활성화 상태 클래스 */
-        .active-slot { border-left: 4px solid var(--limbus-red); background: #1a0a0a !important; color: white !important; }
-        
-        /* [일반 활성: 빨강] */
-        .gift-active { background: #991b1b; color: white; border: 1px solid #ff0000; animation: pulse 2s infinite; }
-        
-        /* [추가 효과: 금색] */
-        .gift-extra { 
-            background: #854d0e; color: #fef08a; border: 1px solid #eab308; 
-            box-shadow: 0 0 8px rgba(234, 179, 8, 0.4); animation: pulse-extra 1.5s infinite; font-weight: bold;
+        /* 접혔을 때 내부 잔상 완벽 제거 */
+        @media (min-width: 769px) {
+            .sidebar.collapsed { width: 0 !important; border: none; }
+            .sidebar.collapsed .sidebar-inner { visibility: hidden; opacity: 0; pointer-events: none; }
+            #left-sidebar { width: 260px; }
+            #right-sidebar { width: 280px; }
+            #right-sidebar .sidebar-inner { width: 280px; }
         }
+
+        /* 모바일 대응 */
+        @media (max-width: 768px) {
+            .sidebar { position: fixed; top: 0; width: 280px !important; }
+            #left-sidebar { left: -280px; transition: left 0.3s ease; }
+            #right-sidebar { right: -280px; transition: right 0.3s ease; }
+            #left-sidebar.active { left: 0 !important; }
+            #right-sidebar.active { right: 0 !important; }
+            .sidebar-inner { width: 280px; }
+        }
+
+        /* [사이드바 일체형 핸들] */
+        .sidebar-handle { position: absolute; top: 10px; width: 30px; height: 45px; background: #1a1a1a; border: 1px solid #333; display: flex; align-items: center; justify-content: center; cursor: pointer; color: white; z-index: 1001; }
+        #left-sidebar .sidebar-handle { right: -30px; border-left: none; border-radius: 0 5px 5px 0; }
+        #right-sidebar .sidebar-handle { left: -30px; border-right: none; border-radius: 5px 0 0 5px; }
+
+        /* [중앙 헤더 배치 가이드] */
+        header { padding-left: 50px !important; padding-right: 50px !important; }
+        .header-center { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; flex: 1; }
+        .header-left { display: flex; align-items: center; gap: 8px; width: 280px; }
+        .reset-group { display: flex; align-items: center; gap: 1px; background: #1a1a1a; padding: 2px; border-radius: 6px; border: 1px solid #333; }
+        .reset-group button { padding: 4px 10px; font-size: 10px; color: #888; transition: all 0.2s; }
+        .reset-group button:hover { color: var(--limbus-red); background: #222; }
+
+        /* 기프트 활성화 상태 */
+        .active-slot { border-left: 4px solid var(--limbus-red); background: #2d1010; color: white; }
+        .gift-active { background: #991b1b; color: white; border: 1px solid #ff0000; animation: pulse 2s infinite; }
+        .gift-extra { background: #854d0e; color: #fef08a; border: 1px solid #eab308; box-shadow: 0 0 8px rgba(234, 179, 8, 0.4); animation: pulse-extra 1.5s infinite; font-weight: bold; }
 
         @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.7; } }
         @keyframes pulse-extra { 0%, 100% { transform: scale(1); opacity: 1; } 50% { transform: scale(1.05); opacity: 0.8; } }
 
-        /* 스킬 수치 입력: 최상급 가독성 */
-        input[type="number"] { 
-            width: 32px; background: #ffffff !important; color: #000000 !important; 
-            border: 1px solid #ff0000; text-align: center; border-radius: 2px; 
-            font-weight: 900 !important; font-size: 11px; padding: 1px 0;
-        }
+        input[type="number"] { width: 32px; background: #ffffff !important; color: #000000 !important; border: 1px solid #ff0000; text-align: center; border-radius: 2px; font-weight: 900 !important; font-size: 11px; padding: 1px 0; }
 
         /* 툴팁 */
         .has-tooltip { position: relative; }
-        .tooltip { 
-            visibility: hidden; opacity: 0; position: absolute; z-index: 999; 
-            right: 105%; top: 0; width: 240px; background-color: rgba(0, 0, 0, 0.95); 
-            color: #eee; padding: 10px; border: 1px solid #444; border-radius: 6px; 
-            font-size: 11px; line-height: 1.4; white-space: normal; 
-            box-shadow: -5px 5px 15px rgba(0,0,0,0.5); pointer-events: none; transition: opacity 0.2s;
-        }
+        .tooltip { visibility: hidden; opacity: 0; position: absolute; z-index: 999; right: 105%; top: 0; width: 240px; background-color: rgba(0, 0, 0, 0.95); color: #eee; padding: 10px; border: 1px solid #444; border-radius: 6px; font-size: 11px; line-height: 1.4; white-space: normal; box-shadow: -5px 5px 15px rgba(0,0,0,0.5); pointer-events: none; transition: opacity 0.2s; }
         .has-tooltip:hover .tooltip { visibility: visible; opacity: 1; }
         .tooltip b { color: var(--limbus-red); display: block; margin-bottom: 4px; border-bottom: 1px solid #333; padding-bottom: 2px; }
 
         .kw-summary-item { border-right: 1px solid #333; padding-right: 8px; margin-right: 8px; font-size: 12px; font-weight: bold; }
         .kw-summary-item:last-child { border-right: none; }
         .dragging { opacity: 0.5; background: #333 !important; }
-        
-        #reserve-party { transition: max-height 0.4s ease-out; }
+
+        .overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 900; }
+        .overlay.active { display: block; }
     </style>
 </head>
-<body class="flex h-screen w-screen border-t-2 border-red-900">
+<body class="flex h-screen w-screen border-t-2 border-red-900 overflow-hidden">
 
-    <div id="left-toggle" class="side-toggle" onclick="toggleSidebar('left')"><i id="left-icon" class="fas fa-chevron-left"></i></div>
-    <div id="right-toggle" class="side-toggle" onclick="toggleSidebar('right')"><i id="right-icon" class="fas fa-chevron-right"></i></div>
+    <div id="sidebar-overlay" class="overlay" onclick="closeAllSidebars()"></div>
 
-    <aside id="left-sidebar" class="sidebar border-r border-stone-800 flex flex-col">
-        <div class="p-4 font-bold text-stone-500 flex justify-between items-center border-b border-stone-900">
-            <span>편성 목록</span>
-            <button onclick="addNewSlot()" class="text-red-500 hover:scale-110"><i class="fas fa-plus-circle"></i></button>
+    <!-- [좌측 사이드바] -->
+    <aside id="left-sidebar" class="sidebar border-r border-stone-800">
+        <div class="sidebar-handle" onclick="toggleSidebar('left')">
+            <i id="left-icon" class="fas fa-bars"></i>
         </div>
-        <div id="slot-list" class="flex-1 overflow-y-auto p-2 space-y-1"></div>
-        <div class="p-2 text-[9px] text-stone-600 text-center bg-stone-900 uppercase">D-Click: Rename / Drag: Sort</div>
+        <div class="sidebar-inner">
+            <div class="p-4 font-bold text-stone-500 flex justify-between items-center border-b border-stone-900">
+                <span class="tracking-widest uppercase text-[18px] font-black text-stone-200">편성 목록</span>
+                <button onclick="addNewSlot()" class="text-red-500 hover:scale-110 transition"><i class="fas fa-plus-circle"></i></button>
+            </div>
+            <div id="slot-list" class="flex-1 overflow-y-auto p-2 space-y-1 scroll-dark"></div>
+            <div class="p-2 text-[10px] text-stone-700 text-center bg-black/30">더블 클릭 : 이름 변경 / 드래그 : 위치 변경</div>
+        </div>
     </aside>
 
+    <!-- [중앙 메인 영역] -->
     <main class="flex-1 flex flex-col overflow-hidden relative">
-        <header class="p-3 border-b border-stone-900 bg-stone-950/80 flex justify-between items-start">
-            <div class="flex items-center gap-4 mt-1">
-                <label class="relative inline-flex items-center cursor-pointer">
-                    <input type="checkbox" id="deployment-toggle" onchange="updateDeployment(this.checked)" class="sr-only peer">
-                    <div class="w-16 h-6 bg-stone-800 rounded-full peer peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-red-600 after:rounded-full after:h-5 after:w-7 after:transition-all"></div>
-                    <div class="absolute w-full flex justify-around text-[8px] font-bold pointer-events-none px-2 text-stone-300"><span>6인</span><span>7인</span></div>
-                </label>
-                <h1 id="active-slot-name-display" class="text-xl font-black text-red-600 uppercase tracking-tighter"></h1>
-            </div>
-            
-            <div class="flex gap-2 mb-2 items-center">
-                <span class="text-[10px] text-stone-500 mr-1 uppercase tracking-widest font-bold">리셋</span>
-                <button onclick="resetPart('party')" class="bg-stone-800 hover:bg-orange-900/50 text-orange-500 border border-stone-700 px-2 py-1 rounded text-[10px] transition">
-                    <i class="fas fa-users-slash mr-1"></i>인격
-                </button>
-                <button onclick="resetPart('gifts')" class="bg-stone-800 hover:bg-orange-900/50 text-orange-500 border border-stone-700 px-2 py-1 rounded text-[10px] transition">
-                    <i class="fas fa-box-open mr-1"></i>기프트
-                </button>
-                <button onclick="resetPart('floors')" class="bg-stone-800 hover:bg-orange-900/50 text-orange-500 border border-stone-700 px-2 py-1 rounded text-[10px] transition">
-                    <i class="fas fa-map-marked mr-1"></i>팩
-                </button>
-                <div class="h-4 w-[1px] bg-stone-700 mx-1"></div>
-                <button onclick="resetPart('all')" class="bg-red-900/30 hover:bg-red-600 text-red-500 hover:text-white border border-red-900/50 px-2 py-1 rounded text-[10px] font-bold transition">
-                    <i class="fas fa-trash-alt mr-1"></i>전체 초기화
-                </button>
+        <header class="p-4 border-b border-stone-900 bg-stone-950/80 flex items-center justify-between">
+            <!-- 좌측: 코드 입출력 -->
+            <div class="header-left">
+                <div class="flex flex-col gap-1 w-full">
+                    <div class="flex gap-1">
+                        <input id="in-code" type="text" class="bg-black text-[9px] p-1.5 flex-1 rounded border border-stone-800 outline-none" placeholder="IMPORT">
+                        <button onclick="importCode(true)" class="bg-stone-800 px-2 py-1 rounded text-[9px]">추가</button>
+                    </div>
+                    <div class="flex gap-1">
+                        <input id="out-code" readonly type="text" class="bg-black text-[9px] p-1.5 flex-1 rounded border border-stone-800 outline-none" placeholder="EXPORT">
+                        <button onclick="copyExportCode()" class="bg-blue-900/50 text-blue-400 border border-blue-900/50 px-2 py-1 rounded text-[9px] hover:bg-blue-900">복사</button>
+                    </div>
+                </div>
             </div>
 
-            <div class="flex flex-col items-end gap-1">
-                <div class="flex gap-2 items-center">
-                    <input id="in-code" type="text" class="bg-black text-[10px] p-1.5 w-24 rounded border border-stone-800" placeholder="IMPORT">
-                    <button onclick="importCode(true)" class="bg-stone-800 px-2 py-1 rounded text-[10px]">추가</button>
-                    <button onclick="importCode(false)" class="bg-stone-800 px-2 py-1 rounded text-[10px]">덮어쓰기</button>
-                    <div class="h-3 w-[1px] bg-stone-800 mx-1"></div>
-                    <input id="out-code" readonly type="text" class="bg-black text-[10px] p-1.5 w-20 rounded border border-stone-800">
-                    <button onclick="copyExportCode()" class="bg-blue-900 px-2 py-1 rounded text-[10px] hover:bg-blue-800">복사</button>
+            <!-- 중앙: 정보 및 리셋 -->
+            <div class="header-center">
+                <div class="flex items-center gap-6">
+                    <label class="relative inline-flex items-center cursor-pointer scale-110">
+                        <input type="checkbox" id="deployment-toggle" onchange="updateDeployment(this.checked)" class="sr-only peer">
+                        <div class="w-16 h-6 bg-stone-800 rounded-full peer peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-red-600 after:rounded-full after:h-5 after:w-7 after:transition-all"></div>
+                        <div class="absolute w-full flex justify-around text-[8px] font-bold pointer-events-none px-2 text-stone-300"><span>6인</span><span>7인</span></div>
+                    </label>
+                    <h1 id="active-slot-name-display" class="text-2xl font-black text-red-600 uppercase tracking-tighter"></h1>
                 </div>
-                <div id="total-summary" class="flex gap-1 h-6 items-center"></div>
+                <div class="reset-group">
+                    <button onclick="resetPart('party')">인격 리셋</button>
+                    <button onclick="resetPart('gifts')">기프트 리셋</button>
+                    <button onclick="resetPart('floors')">팩 리셋</button>
+                    <button onclick="resetPart('all')" class="text-red-600 font-bold">전체 초기화</button>
+                </div>
+            </div>
+
+            <!-- 우측: 통계 요약 -->
+            <div class="flex flex-col items-end gap-1 w-[280px]">
+                <div id="total-summary" class="flex flex-wrap gap-1 justify-end"></div>
             </div>
         </header>
 
@@ -124,43 +139,42 @@
             
             <section class="border-t border-stone-900 pt-2">
                 <div class="flex justify-between items-center cursor-pointer mb-2 bg-stone-900/30 p-1 px-2 rounded hover:bg-stone-800" onclick="toggleReserve()">
-                    <h4 class="text-[10px] font-bold text-stone-500 uppercase tracking-widest">대기 편성</h4>
+                    <h4 class="text-[10px] font-bold text-stone-500 uppercase tracking-widest">Reserve Party</h4>
                     <i id="reserve-icon" class="fas fa-chevron-up text-stone-600 text-[10px]"></i>
                 </div>
-                <div id="reserve-party" class="space-y-1 overflow-hidden"></div>
+                <div id="reserve-party" class="space-y-1 overflow-hidden" style="max-height: 1000px;"></div>
             </section>
 
             <section class="border-t border-stone-900 pt-4">
-                <h4 class="text-[14px] font-bold text-blue-500 mb-2 uppercase">팩 리스트</h4>
-                <div id="floor-list" class="grid grid-cols-5 gap-2"></div>
+                <h4 class="text-[14px] font-bold text-blue-500 mb-2 uppercase">1~15층 팩</h4>
+                <div id="floor-list" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2"></div>
             </section>
 
-            <footer class="mt-12 border-t border-stone-800 pt-8 pb-16"></footer>
+            <footer class="mt-12 border-t border-stone-800 pt-8 pb-16">
                 <div class="flex items-center gap-2 mb-6">
                     <i class="fas fa-info-circle text-red-600"></i>
                     <h3 class="text-stone-500 font-bold uppercase tracking-widest text-[11px]">주의사항</h3>
                 </div>
-
-                <div id="guide-container" class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6 text-[11px] text-stone-400 leading-relaxed">
-                    <div class="animate-pulse bg-stone-900 h-20 rounded"></div>
-                    <div class="animate-pulse bg-stone-900 h-20 rounded"></div>
-                </div>
-
-                <div class="mt-10 pt-6 border-t border-stone-900 text-center text-stone-600 text-[10px]">
-                    <p> 15F는 Limbus Company의 비공식 정보 사이트입니다. 모든 게임 리소스의 저작권은 Project Moon에 있습니다.</p>
-                </div>
+                <div id="guide-container" class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6 text-[11px] text-stone-400 leading-relaxed"></div>
             </footer>
-
         </div>
     </main>
 
-    <aside id="right-sidebar" class="sidebar border-l border-stone-800 flex flex-col">
-        <div class="p-3 border-b border-stone-900 font-bold text-red-600 flex justify-between items-center">
-            <span>에고 기프트</span>
-            <button onclick="toggleSort()" class="text-[10px] text-stone-500 hover:text-white">등급 <i class="fas fa-sort"></i></button>
+    <!-- [우측 사이드바] -->
+    <aside id="right-sidebar" class="sidebar border-l border-stone-800">
+        <div class="sidebar-handle" onclick="toggleSidebar('right')">
+            <i id="right-icon" class="fas fa-box-open"></i>
         </div>
-        <div class="p-2 border-b border-stone-800"><input type="text" id="gift-search" oninput="renderGifts()" class="w-full bg-black text-xs p-2 rounded border border-stone-800 outline-none" placeholder="Filter..."></div>
-        <div id="gift-inventory" class="flex-1 overflow-y-auto p-2 space-y-1"></div>
+        <div class="sidebar-inner">
+            <div class="p-3 border-b border-stone-900 font-bold text-red-600 flex justify-between items-center">
+                <span class="text-lg">에고 기프트</span>
+                <button onclick="toggleSort()" class="text-[12px] text-stone-500 hover:text-white">등급 <i class="fas fa-sort"></i></button>
+            </div>
+            <div class="p-2 border-b border-stone-800">
+                <input type="text" id="gift-search" oninput="renderGifts()" class="w-full bg-black text-xs p-2 rounded border border-stone-800 outline-none" placeholder="Search...">
+            </div>
+            <div id="gift-inventory" class="flex-1 overflow-y-auto p-2 space-y-1 scroll-dark"></div>
+        </div>
     </aside>
 
     <script src="js/app.js"></script>
