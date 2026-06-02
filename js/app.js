@@ -192,9 +192,6 @@ function renderParty() {
                             <span class="atk-type">${idData[sk].type}</span>
                         </div>
                         <input type="number" value="${p[sk+'_count']}" min="0" max="6" onchange="updateSk(${i},'${sk}_count',this.value)">
-                        <div class="flex flex-wrap justify-center gap-0.5 mt-1">
-                            ${(idData[sk].keywords || []).map(k => `<span class="text-[7px]" style="color:${DATA.kwColors[k]}">${k}</span>`).join('')}
-                        </div>
                     </div>`).join('') : '<div class="text-stone-800 text-[9px] py-1 italic w-full text-center">Unknown</div>'}
             </div>
 
@@ -258,7 +255,20 @@ function addNewSlot() { const n = prompt("새 편성 이름:"); if(n) { slots.pu
 function deleteSlot(i) { if(slots.length > 1 && confirm("삭제하시겠습니까?")) { slots.splice(i,1); activeIdx=0; refreshUI(); saveToLocal(); }}
 function updateExportCode() { document.getElementById('out-code').value = btoa(encodeURIComponent(JSON.stringify(slots[activeIdx]))); }
 function copyExportCode() { const el = document.getElementById('out-code'); el.select(); document.execCommand('copy'); alert("복사됨"); }
-function importCode(asNew) { try { const data = JSON.parse(decodeURIComponent(atob(document.getElementById('in-code').value))); if(asNew) { slots.push(data); activeIdx = slots.length-1; } else slots[activeIdx] = data; document.getElementById('in-code').value = ''; refreshUI(); saveToLocal(); } catch(e) { alert("코드오류"); } }
+function importCode(asNew) { 
+    const input = document.getElementById('in-code');
+    try { const data = JSON.parse(decodeURIComponent(atob(input.value))); if (asNew) { slots.push(data); activeIdx = slots.length - 1;
+        } else {
+            if(confirm("현재 편성에 코드를 덮어씌우시겠습니까?")) {
+                slots[activeIdx] = data;
+            } else {
+                return;
+            }
+        }
+        input.value = ''; saveToLocal(); refreshUI(); alert("성공적으로 불러왔습니다.");
+    } catch (e) { alert("유효하지 않은 코드입니다.");
+    }
+}
 function saveToLocal() { localStorage.setItem('limbus_md_v18_final', JSON.stringify(slots)); }
 
 function resetPart(type) {
