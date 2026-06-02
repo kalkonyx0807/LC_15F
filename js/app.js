@@ -171,16 +171,37 @@ function renderParty() {
     document.getElementById('total-summary').innerHTML = sortedKw.map(k => `<span class="kw-summary-item" style="color:${DATA.kwColors[k]}">${k} ${stats.actKw[k]}</span>`).join('');
     const inUse = s.party.map(x => x.sinner).filter(Boolean);
     s.party.forEach((p, i) => {
-        const isRes = i >= limit, div = document.createElement('div');
-        div.className = `flex items-center gap-2 p-1.5 rounded border border-stone-900 ${isRes ? 'bg-stone-950/20' : 'bg-stone-900/40'}`;
-        const idList = DATA.identities[p.sinner] || [], idData = (p.idName && idList) ? idList.find(x => x.name === p.idName) : null;
+        const isRes = i >= limit;
+        const idList = DATA.identities[p.sinner] || [];
+        const idData = (p.idName && idList) ? idList.find(x => x.name === p.idName) : null;
         const sinners = DATA.sinners.filter(sn => sn === p.sinner || !inUse.includes(sn));
         const giftTags = idData ? DATA.allGifts.map(g => { const st = checkGiftStatus(g, p, i, stats); return st > 0 ? `<span class="${st===2?'gift-extra':'gift-active'} px-1.5 rounded text-[8px] mr-0.5 whitespace-nowrap">${g.name}</span>` : ''; }).join('') : '';
-        div.innerHTML = `<span class="w-4 text-center font-mono text-stone-700 text-[9px]">${i+1}</span>
-            <select onchange="updateSinner(${i}, this.value)" class="w-16 bg-black text-stone-300 rounded text-[10px] outline-none"><option value="">수감자</option>${sinners.map(sn => `<option value="${sn}" ${p.sinner===sn?'selected':''}>${sn}</option>`).join('')}</select>
-            <select onchange="updateId(${i}, this.value)" class="w-24 bg-black text-stone-300 rounded text-[10px] outline-none"><option value="">인격</option>${idList.map(id => `<option value="${id.name}" ${p.idName===id.name?'selected':''}>${id.name}</option>`).join('')}</select>
-            <div class="flex gap-4 px-2 border-l border-stone-800">${idData ? ["s1","s2","s3"].map(sk => `<div class="flex flex-col items-center"><div class="flex gap-1 text-[8px] leading-none mb-1"><span class="sin-${idData[sk].sin}">${idData[sk].sin}</span><span class="atk-type">${idData[sk].type}</span></div><input type="number" value="${p[sk+'_count']}" min="0" max="6" onchange="updateSk(${i},'${sk}_count',this.value)"><div class="flex gap-0.5 mt-0.5">${(idData[sk].keywords || []).map(k => `<span class="text-[7px]" style="color:${DATA.kwColors[k]}">${k}</span>`).join('')}</div></div>`).join('') : '<div class="text-stone-800 text-[9px] py-2 italic">Unknown</div>'}</div>
-            <div class="flex-1 flex justify-end items-center gap-0.5 overflow-hidden">${giftTags}</div>`;
+        const div = document.createElement('div');
+        div.className = `flex flex-col md:flex-row items-stretch md:items-center gap-3 p-2 md:p-1.5 rounded border border-stone-900 ${isRes ? 'bg-stone-950/20' : 'bg-stone-900/40'}`;
+        div.innerHTML = `
+            <div class="flex items-center gap-2 flex-shrink-0">
+                <span class="w-4 text-center font-mono text-stone-700 text-[9px]">${i+1}</span>
+                <select onchange="updateSinner(${i}, this.value)" class="flex-1 md:w-16 bg-black text-stone-300 rounded text-[10px] p-1 outline-none"><option value="">수감자</option>${sinners.map(sn => `<option value="${sn}" ${p.sinner===sn?'selected':''}>${sn}</option>`).join('')}</select>
+                <select onchange="updateId(${i}, this.value)" class="flex-[2] md:w-24 bg-black text-stone-300 rounded text-[10px] p-1 outline-none"><option value="">인격</option>${idList.map(id => `<option value="${id.name}" ${p.idName===id.name?'selected':''}>${id.name}</option>`).join('')}</select>
+            </div>
+            <div class="flex justify-around md:justify-start gap-4 px-2 border-t md:border-t-0 md:border-l border-stone-800 pt-2 md:pt-0">
+                ${idData ? ["s1","s2","s3"].map(sk => `
+                    <div class="flex flex-col items-center min-w-[50px]">
+                        <div class="flex gap-1 text-[8px] leading-none mb-1">
+                            <span class="sin-${idData[sk].sin}">${idData[sk].sin}</span>
+                            <span class="atk-type">${idData[sk].type}</span>
+                        </div>
+                        <input type="number" value="${p[sk+'_count']}" min="0" max="6" onchange="updateSk(${i},'${sk}_count',this.value)">
+                        <div class="flex flex-wrap justify-center gap-0.5 mt-1">
+                            ${(idData[sk].keywords || []).map(k => `<span class="text-[7px]" style="color:${DATA.kwColors[k]}">${k}</span>`).join('')}
+                        </div>
+                    </div>`).join('') : '<div class="text-stone-800 text-[9px] py-1 italic w-full text-center">Unknown</div>'}
+            </div>
+
+            <div class="flex flex-wrap justify-start md:justify-end items-center gap-1 border-t md:border-t-0 border-stone-800 pt-2 md:pt-0 flex-1">
+                ${giftTags || '<span class="text-stone-800 text-[8px]">NO E.G.O GIFTS</span>'}
+            </div>
+        `;
         (isRes ? resCont : actCont).appendChild(div);
     });
 }
