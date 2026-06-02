@@ -233,7 +233,7 @@ function renderFloors() {
         const curPackObj = packOptions.find(p => p.name === floorData.pack);
 
         // 팩 선택 HTML 조립
-        let optionsHtml = `<option value="">Select Pack</option>`;
+        let optionsHtml = `<option value="">팩 선택</option>`;
         packOptions.forEach(pk => {
             // [중복 방지 로직]
             // 다른 층에서 이미 선택되었고, 현재 이 층에서 선택된 팩이 아니라면 'disabled' 처리
