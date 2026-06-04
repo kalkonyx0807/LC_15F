@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root { --limbus-red: #ef4444; --limbus-gold: #facc15; --bg-dark: #070707; }
-        body { background-color: var(--bg-dark); color: #e5e7eb; font-family: 'Pretendard', sans-serif; overflow: hidden; font-size: 12px; }
+        body { background-color: var(--bg-dark); color: #e5e7eb; font-family: 'Pretendard', sans-serif; overflow: hidden; font-size: 13px; }
         
         .sin-분노 { color: #ff4d4d; } .sin-색욕 { color: #ff944d; } .sin-나태 { color: #ffdb4d; }
         .sin-탐식 { color: #b7ff4d; } .sin-우울 { color: #4dffdb; } .sin-오만 { color: #4da6ff; } .sin-질투 { color: #a64dff; }
@@ -74,7 +74,7 @@
         @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.7; } }
         @keyframes pulse-extra { 0%, 100% { transform: scale(1); opacity: 1; } 50% { transform: scale(1.05); opacity: 0.8; } }
 
-        input[type="number"] { width: 32px; background: #ffffff !important; color: #000000 !important; border: 1px solid #ff0000; text-align: center; border-radius: 2px; font-weight: 900 !important; font-size: 11px; padding: 1px 0; }
+        input[type="number"] { width: 36px; background: #ffffff !important; color: #000000 !important; border: 1px solid #ff0000; text-align: center; border-radius: 2px; font-weight: 900 !important; font-size: 13px; padding: 2px 0; }
 
         /* 툴팁 */
         .has-tooltip { position: relative; }
@@ -115,13 +115,13 @@
             <!-- 좌측: 코드 입출력 -->
             <div class="flex flex-col gap-1 w-full lg:w-64 order-2 lg:order-1">
                 <div class="flex gap-1">
-                    <input id="in-code" type="text" class="bg-black text-[9px] p-1.5 flex-1 rounded border border-stone-800 outline-none" placeholder="IMPORT">
-                    <button onclick="importCode(true)" class="bg-stone-800 px-2 py-1 rounded text-[9px]">추가</button>
-                    <button onclick="importCode(false)" class="bg-orange-900/50 text-orange-400 border border-orange-900/50 px-2 py-1 rounded text-[9px] hover:bg-orange-800 whitespace-nowrap">덮어쓰기</button>
+                    <input id="in-code" type="text" class="bg-black text-[11px] p-1.5 flex-1 rounded border border-stone-800 outline-none" placeholder="IMPORT">
+                    <button onclick="importCode(true)" class="bg-stone-800 px-2 py-1 rounded text-[11px]">추가</button>
+                    <button onclick="importCode(false)" class="bg-orange-900/50 text-orange-400 border border-orange-900/50 px-2 py-1 rounded text-[11px] hover:bg-orange-800 whitespace-nowrap">덮어쓰기</button>
                 </div>
                 <div class="flex gap-1">
-                    <input id="out-code" readonly type="text" class="bg-black text-[9px] p-1.5 flex-1 rounded border border-stone-800 outline-none" placeholder="EXPORT">
-                    <button onclick="copyExportCode()" class="bg-blue-900/50 text-blue-400 border border-blue-900/50 px-2 py-1 rounded text-[9px] hover:bg-blue-900">복사</button>
+                    <input id="out-code" readonly type="text" class="bg-black text-[11px] p-1.5 flex-1 rounded border border-stone-800 outline-none" placeholder="EXPORT">
+                    <button onclick="copyExportCode()" class="bg-blue-900/50 text-blue-400 border border-blue-900/50 px-2 py-1 rounded text-[11px] hover:bg-blue-900">복사</button>
                 </div>
             </div>
 
@@ -130,7 +130,7 @@
                     <label class="relative inline-flex items-center cursor-pointer flex-shrink-0">
                         <input type="checkbox" id="deployment-toggle" onchange="updateDeployment(this.checked)" class="sr-only peer">
                         <div class="w-14 h-5 bg-stone-800 rounded-full peer peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-red-600 after:rounded-full after:h-4 after:w-6 after:transition-all"></div>
-                        <div class="absolute w-full flex justify-around text-[7px] font-bold pointer-events-none px-2 text-stone-300"><span>6인</span><span>7인</span></div>
+                        <div class="absolute w-full flex justify-around text-[8px] font-bold pointer-events-none px-2 text-stone-300"><span>6인</span><span>7인</span></div>
                     </label>
 
                     <h1 id="active-slot-name-display" class="text-xl lg:text-2xl font-black text-red-600 uppercase tracking-tighter border-b-2 border-red-900/30 px-2 text-center truncate"></h1>
@@ -146,7 +146,7 @@
 
             <!-- 우측: 통계 요약 -->
             <div class="w-full lg:w-72 order-3">
-                <div id="total-summary" class="flex flex-wrap gap-x-2 gap-y-1 justify-center lg:justify-end text-[10px] lg:text-[11px]"></div>
+                <div id="total-summary" class="flex flex-wrap gap-x-2 gap-y-1 justify-center lg:justify-end text-[12px] lg:text-[11px]"></div>
             </div>
         </header>
 
@@ -155,8 +155,8 @@
             
             <section class="border-t border-stone-900 pt-2">
                 <div class="flex justify-between items-center cursor-pointer mb-2 bg-stone-900/30 p-1 px-2 rounded hover:bg-stone-800" onclick="toggleReserve()">
-                    <h4 class="text-[10px] font-bold text-stone-500 uppercase tracking-widest">대기편성</h4>
-                    <i id="reserve-icon" class="fas fa-chevron-up text-stone-600 text-[10px]"></i>
+                    <h4 class="text-[12px] font-bold text-stone-500 uppercase tracking-widest">대기편성</h4>
+                    <i id="reserve-icon" class="fas fa-chevron-up text-stone-600 text-[12px]"></i>
                 </div>
                 <div id="reserve-party" class="space-y-1 overflow-hidden" style="max-height: 1000px;"></div>
             </section>
