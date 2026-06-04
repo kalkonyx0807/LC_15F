@@ -175,19 +175,19 @@ function renderParty() {
         const idList = DATA.identities[p.sinner] || [];
         const idData = (p.idName && idList) ? idList.find(x => x.name === p.idName) : null;
         const sinners = DATA.sinners.filter(sn => sn === p.sinner || !inUse.includes(sn));
-        const giftTags = idData ? DATA.allGifts.map(g => { const st = checkGiftStatus(g, p, i, stats); return st > 0 ? `<span class="${st===2?'gift-extra':'gift-active'} px-1.5 rounded text-[8px] mr-0.5 whitespace-nowrap">${g.name}</span>` : ''; }).join('') : '';
+        const giftTags = idData ? DATA.allGifts.map(g => { const st = checkGiftStatus(g, p, i, stats); return st > 0 ? `<span class="${st===2?'gift-extra':'gift-active'} px-1.5 rounded text-[10px] mr-0.5 whitespace-nowrap">${g.name}</span>` : ''; }).join('') : '';
         const div = document.createElement('div');
         div.className = `flex flex-col md:flex-row items-stretch md:items-center gap-3 p-2 md:p-1.5 rounded border border-stone-900 ${isRes ? 'bg-stone-950/20' : 'bg-stone-900/40'}`;
         div.innerHTML = `
             <div class="flex items-center gap-2 flex-shrink-0">
-                <span class="w-4 text-center font-mono text-stone-700 text-[9px]">${i+1}</span>
-                <select onchange="updateSinner(${i}, this.value)" class="flex-1 md:w-16 bg-black text-stone-300 rounded text-[10px] p-1 outline-none"><option value="">수감자</option>${sinners.map(sn => `<option value="${sn}" ${p.sinner===sn?'selected':''}>${sn}</option>`).join('')}</select>
-                <select onchange="updateId(${i}, this.value)" class="flex-[2] md:w-24 bg-black text-stone-300 rounded text-[10px] p-1 outline-none"><option value="">인격</option>${idList.map(id => `<option value="${id.name}" ${p.idName===id.name?'selected':''}>${id.name}</option>`).join('')}</select>
+                <span class="w-5 text-center font-mono text-stone-700 text-[12px]">${i+1}</span>
+                <select onchange="updateSinner(${i}, this.value)" class="flex-1 md:w-16 bg-black text-stone-300 rounded text-[12px] p-1 outline-none"><option value="">수감자</option>${sinners.map(sn => `<option value="${sn}" ${p.sinner===sn?'selected':''}>${sn}</option>`).join('')}</select>
+                <select onchange="updateId(${i}, this.value)" class="flex-[2] md:w-24 bg-black text-stone-300 rounded text-[12px] p-1 outline-none"><option value="">인격</option>${idList.map(id => `<option value="${id.name}" ${p.idName===id.name?'selected':''}>${id.name}</option>`).join('')}</select>
             </div>
             <div class="flex justify-around md:justify-start gap-4 px-2 border-t md:border-t-0 md:border-l border-stone-800 pt-2 md:pt-0">
                 ${idData ? ["s1","s2","s3"].map(sk => `
                     <div class="flex flex-col items-center min-w-[50px]">
-                        <div class="flex gap-1 text-[8px] leading-none mb-1">
+                        <div class="flex gap-1 text-[10px] leading-none mb-1">
                             <span class="sin-${idData[sk].sin}">${idData[sk].sin}</span>
                             <span class="atk-type">${idData[sk].type}</span>
                         </div>
@@ -210,7 +210,7 @@ function renderFloors() {
         const floorData = slots[activeIdx].floors[i-1], packs = DATA.packs[i] || [], curPack = packs.find(p => p.name === floorData.pack);
         let opts = `<option value="">팩 선택</option>`;
         packs.forEach(pk => { const isOut = selectedPacks.includes(pk.name) && pk.name !== floorData.pack; opts += `<option value="${pk.name}" ${floorData.pack===pk.name?'selected':''} ${isOut?'disabled':''}>${pk.name}${isOut?' (선택됨)':''}</option>`; });
-        list.innerHTML += `<div class="bg-stone-900 border border-stone-800 p-1.5 rounded shadow-inner"><div class="text-[10px] text-stone-500 font-bold mb-1 border-b border-stone-800 pb-0.5">${i}F</div><select onchange="updateFloor(${i-1}, this.value)" class="w-full bg-black text-[11px] text-stone-300 outline-none mb-1 cursor-pointer">${opts}</select><div class="text-[11px] text-yellow-400 font-bold leading-normal mt-1">${(curPack?.gifts || []).filter(g => g.trim()!=="").map(g => `• ${g}`).join('<br>')}</div></div>`;
+        list.innerHTML += `<div class="bg-stone-900 border border-stone-800 p-1.5 rounded shadow-inner"><div class="text-[12px] text-stone-500 font-bold mb-1 border-b border-stone-800 pb-0.5">${i}F</div><select onchange="updateFloor(${i-1}, this.value)" class="w-full bg-black text-[13px] text-stone-300 outline-none mb-1 cursor-pointer">${opts}</select><div class="text-[13px] text-yellow-400 font-bold leading-normal mt-1">${(curPack?.gifts || []).filter(g => g.trim()!=="").map(g => `• ${g}`).join('<br>')}</div></div>`;
     }
 }
 
