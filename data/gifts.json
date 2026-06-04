@@ -1668,13 +1668,13 @@
       "desc": "전투 편성 중 중지 소속 인격 3명 이상 (혈향도래와 중복 불가). 전투 편성 중 중지 소속 인격 5명 이상 시 금색 표시"
      }
   ],
-  "기타": [
+  "범용": [
     {
       "id": "AGN_2_001",
       "name": "마을을 지킬 작살",
       "img": "",
       "grade": 2,
-      "cats": ["기타"],
+      "cats": ["범용"],
       "type": "position",
       "targetSlot": 5,
       "desc": "5번 슬롯에 인격 배치"
@@ -1684,7 +1684,7 @@
       "name": "검은 장부",
       "img": "",
       "grade": 2,
-      "cats": ["기타"],
+      "cats": ["범용"],
       "type": "faction_list",
       "factions": ["검계", "흑운회"],
       "min": 4,
@@ -1695,7 +1695,7 @@
       "name": "경멸의 시선의 경멸",
       "img": "",
       "grade": 2,
-      "cats": ["기타"],
+      "cats": ["범용"],
       "type": "position",
       "targetSlot": [0,5],
       "desc": "0,5번 슬롯에 인격 배치"
@@ -1705,7 +1705,7 @@
       "name": "불 꺼진 촛대",
       "img": "",
       "grade": 2,
-      "cats": ["기타"],
+      "cats": ["범용"],
       "type": "position",
       "targetSlot": 0,
       "desc": "0번 슬롯에 인격 배치"
@@ -1715,7 +1715,7 @@
       "name": "긴급 부여형 수사관 배지",
       "img": "",
       "grade": 2,
-      "cats": ["기타"],
+      "cats": ["범용"],
       "type": "position",
       "targetSlot": [0,1,2],
       "desc": "0,1,2번 슬롯에 인격 배치"
@@ -1725,7 +1725,7 @@
       "name": "소홍주",
       "img": "",
       "grade": 2,
-      "cats": ["기타"],
+      "cats": ["범용"],
       "type": "position",
       "targetSlot": [1,3,5],
       "desc": "1,3,5번 슬롯에 인격 배치"
@@ -1735,7 +1735,7 @@
       "name": "아직 따뜻한 커피",
       "img": "",
       "grade": 3,
-      "cats": ["기타"],
+      "cats": ["범용"],
       "type": "position",
       "targetSlot": 0,
       "desc": "0번 슬롯에 인격 배치"
@@ -1745,7 +1745,7 @@
       "name": "부서진 바이올린",
       "img": "",
       "grade": 3,
-      "cats": ["기타"],
+      "cats": ["범용"],
       "type": "position",
       "targetSlot": [4,5],
       "desc": "4,5번 슬롯에 인격 배치"
@@ -1755,7 +1755,7 @@
       "name": "통상 작전용 장비",
       "img": "",
       "grade": 3,
-      "cats": ["기타"],
+      "cats": ["범용"],
       "type": "active_faction",
       "faction": "림버스 컴퍼니",
       "min": 1,
@@ -1769,7 +1769,7 @@
       "name": "찰랑이는 연료통",
       "img": "",
       "grade": 3,
-      "cats": ["기타"],
+      "cats": ["범용"],
       "type": "position",
       "targetSlot": [1,3],
       "desc": "1,3번 슬롯에 인격 배치"
@@ -1779,7 +1779,7 @@
       "name": "잿빛 별자리의 가호",
       "img": "",
       "grade": 3,
-      "cats": ["기타"],
+      "cats": ["범용"],
       "type": "position",
       "targetSlot": 0,
       "desc": "0번 슬롯에 인격 배치"
@@ -1789,7 +1789,7 @@
       "name": "붉게 얽힌 거미집",
       "img": "",
       "grade": 3,
-      "cats": ["기타"],
+      "cats": ["범용"],
       "type": "position",
       "targetSlot": 0,
       "extras": [
@@ -1802,7 +1802,7 @@
       "name": "누군가 놓쳐버린 사원증",
       "img": "",
       "grade": 4,
-      "cats": ["기타"],
+      "cats": ["범용"],
       "type": "active_faction",
       "faction": "림버스 컴퍼니",
       "min": 1,
@@ -1816,7 +1816,7 @@
       "name": "조그맣고 근사한 바이올린",
       "img": "",
       "grade": 4,
-      "cats": ["기타"],
+      "cats": ["범용"],
       "replaces": ["AGN_3_002"],
       "type": "position",
       "targetSlot": [4,5],
@@ -1827,7 +1827,7 @@
       "name": "고위험 작전용 장비",
       "img": "",
       "grade": 4,
-      "cats": ["기타"],
+      "cats": ["범용"],
       "replaces": ["AGN_3_003"],
       "type": "active_faction",
       "faction": "림버스 컴퍼니",
@@ -1839,7 +1839,7 @@
       "name": "보급형 K사 앰플",
       "img": "",
       "grade": 4,
-      "cats": ["기타"],
+      "cats": ["범용"],
       "type": "position",
       "targetSlot": 0,
       "desc": "0번 슬롯에 인격 배치"
