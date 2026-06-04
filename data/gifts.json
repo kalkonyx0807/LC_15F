@@ -909,6 +909,7 @@
       "img": "",
       "grade": 4,
       "cats": ["호흡"],
+      "replaces":["AGN_2_001"],
       "type": "total_faction",
       "faction": "피쿼드호",
       "min": 3,
@@ -1429,7 +1430,7 @@
      },
      {
       "id": "GAP_3_003",
-      "name": "벼려진 가지",
+      "name": "흑염 파이프",
       "img": "",
       "grade": 3,
       "cats": ["관통"],
@@ -1840,7 +1841,6 @@
       "img": "",
       "grade": 4,
       "cats": ["기타"],
-      "replaces": ["AGN_3_002"],
       "type": "position",
       "targetSlot": 0,
       "desc": "0번 슬롯에 인격 배치"
