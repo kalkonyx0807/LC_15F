@@ -175,7 +175,7 @@ function renderParty() {
         const idList = DATA.identities[p.sinner] || [];
         const idData = (p.idName && idList) ? idList.find(x => x.name === p.idName) : null;
         const sinners = DATA.sinners.filter(sn => sn === p.sinner || !inUse.includes(sn));
-        const giftTags = idData ? DATA.allGifts.map(g => { const st = checkGiftStatus(g, p, i, stats); return st > 0 ? `<span class="${st===2?'gift-extra':'gift-active'} px-1.5 rounded text-[10px] mr-0.5 whitespace-nowrap">${g.name}</span>` : ''; }).join('') : '';
+        const giftTags = idData ? DATA.allGifts.map(g => { const st = checkGiftStatus(g, p, i, stats); return st > 0 ? `<span class="${st===2?'gift-extra':'gift-active'} px-2 py-0.5 rounded text-[11px] mr-0.5 whitespace-nowrap">${g.name}</span>` : ''; }).join('') : '';
         const div = document.createElement('div');
         div.className = `flex flex-col md:flex-row items-stretch md:items-center gap-3 p-2 md:p-1.5 rounded border border-stone-900 ${isRes ? 'bg-stone-950/20' : 'bg-stone-900/40'}`;
         div.innerHTML = `
@@ -187,7 +187,7 @@ function renderParty() {
             <div class="flex justify-around md:justify-start gap-4 px-2 border-t md:border-t-0 md:border-l border-stone-800 pt-2 md:pt-0">
                 ${idData ? ["s1","s2","s3"].map(sk => `
                     <div class="flex flex-col items-center min-w-[50px]">
-                        <div class="flex gap-1 text-[10px] leading-none mb-1">
+                        <div class="flex gap-1.5 text-[12px] leading-none mb-1">
                             <span class="sin-${idData[sk].sin}">${idData[sk].sin}</span>
                             <span class="atk-type">${idData[sk].type}</span>
                         </div>
